@@ -168,6 +168,85 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/20/re-%E9%80%9A%E8%BF%87arch-Linux%E7%9A%84%E5%AE%89%E8%A3%85%E5%AD%A6%E4%B9%A0Linux%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4-Virtualbox-4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Grayi">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Grayi's Blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/04/20/re-%E9%80%9A%E8%BF%87arch-Linux%E7%9A%84%E5%AE%89%E8%A3%85%E5%AD%A6%E4%B9%A0Linux%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4-Virtualbox-4/" class="post-title-link" itemprop="url">re:通过arch Linux的安装学习Linux基本指令(Virtualbox)(4)</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-04-20 14:57:31 / 修改时间：14:58:38" itemprop="dateCreated datePublished" datetime="2021-04-20T14:57:31+08:00">2021-04-20</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="13-安装X窗口系统"><a href="#13-安装X窗口系统" class="headerlink" title="13.安装X窗口系统"></a>13.安装X窗口系统</h2><p><code># pacman -S xorg </code></p>
+<p>xorg就是X窗口系统，xorg是X11的一个实现，而X Window System是一个C/S结构的程序，Xorg只是提供了一个X Server，负责底层的操作当你运行一个程序的时候，这个程序会连接到X server上，由X server接收键盘鼠标输入和负责屏幕输出窗口的移动，窗口标题的样式等等。</p>
+<p><code># pacman -S xf86-input-synaptics</code></p>
+<p>input-synaptics这里指的是安装笔记本电脑的触控板接口，如果是台式机的话就没有很大的必要了。synaptics是一家公司。主要是以人机界面交互业务为主。这个接触版接口就是他们家开发的……</p>
+<p><code># pacman -S ttf-dejavu wqy-microhei</code></p>
+<p>安装字体：Dejavu 和 微米黑字体（不安装的话 后面进入桌面环境设置系统语言为简体中文的时候会出现字体显示不全的问题）。</p>
+<p>TTF（TrueTypeFont）是Apple公司和Microsoft公司共同推出的字体文件格式，随着windows的流行，已经变成最常用的一种字体文件表示方式。</p>
+<p>DejaVu是一套改造自Bitstream Vera的电脑字体，大幅扩充了Unicode所含盖的字符。DejaVu以自由版权发布，因此亦为许多自由软件采用为显示字体。</p>
+<h2 id="14-安装桌面环境"><a href="#14-安装桌面环境" class="headerlink" title="14.安装桌面环境"></a>14.安装桌面环境</h2><p>常用的两大桌面环境：GNOME和KDE,这个地方我们主要给予了plasma（KDE最新版本的安装）。啥？你问我区别？自行搜索吧兄得。</p>
+<p><code># pacman -S plasma  \\安装plasma</code></p>
+<p>Plasma 是 KDE 4 中一个关键技术 (被誉为 “KDE 的支柱”)，是用户最直观的东西。　Plasma 是“主管”桌面界面的组件：桌面、面板（经常特指任务栏面板）、以及相关元素。然而，Plasma 不仅仅是这些通常部分至界面。“桌面”自最初拥有以来未曾改变很多：典型的桌面包括快捷方式、一个面板、以及当前运行的程序图标。Plasma 旨在改变这些，融入语义学程序元素，并在简化工作流程的同时以可视化的反应把协作技术带至用户的指尖。</p>
+<p><code># pacman -S konsole  \\安装konsdle控制台终端</code><br><code># pacman -S dolphin  \\安装文件管理器</code><br><code># pacman -S kde-applications \\安装kde套件</code><br><code># systemctl enable sddm \\启用sddm显示管理器</code></p>
+<p>Simple Desktop Display Manager (SDDM) 是用于 X11 和 wayland 视窗系统的显示管理器（图形登录界面）。SDDM 完全使用 C++11 编写并支持通过 QML 改变主题。对于KDE Plasma 5，KDE 选择了 SDDM 作为 KDE Display Manager 的接替者。</p>
+<p><code># systemctl enable NetworkManger \\启用网络管理</code><br><code># pacman -S plasma-nm \\安装图形界面</code></p>
+<p>感觉差不多了，到此之后输入<code># reboot</code>后重启系统就可以进入图形界面了，到此这个篇章结束了~好累好累。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/20/re-%E9%80%9A%E8%BF%87arch-Linux%E7%9A%84%E5%AE%89%E8%A3%85%E5%AD%A6%E4%B9%A0Linux%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4-Virtualbox-3/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -193,7 +272,7 @@
       <span class="post-meta-item-text">发表于</span>
       
 
-      <time title="创建时间：2021-04-20 14:25:20 / 修改时间：14:37:06" itemprop="dateCreated datePublished" datetime="2021-04-20T14:25:20+08:00">2021-04-20</time>
+      <time title="创建时间：2021-04-20 14:57:27 / 修改时间：14:59:04" itemprop="dateCreated datePublished" datetime="2021-04-20T14:57:27+08:00">2021-04-20</time>
     </span>
 
   
@@ -239,85 +318,6 @@
 <p>grep 命令用于查找文件里符合条件的字符串，这个地方是找VGA，上两行命令是安装显卡驱动。这个地方的VGA应该是指VGA接口，VGA（Video Graphics Array）叫视频图形阵列，具有分辨率高、显示速率快、颜色丰富的优点。VGA接口不但是CRT显示设备的标准接口，同样也是LcD液晶显示设备的标准接口，具有广泛的应用范围。</p>
 <p>lspci，顾名思义，就是显示所有的pci设备信息。pci（Peripheral Component Interconnect，外设部件互连标准）是一种总线，而通过pci总线连接的设备就是pci设备了。如今，我们常用的设备很多都是采用pci总线了，如：网卡、存储等。</p>
 <p>pacman -S是aarch Linux中常用的安装指令，不知道可以去搜索一下（我以前好像提到过这个……）</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/04/20/re-%E9%80%9A%E8%BF%87arch-Linux%E7%9A%84%E5%AE%89%E8%A3%85%E5%AD%A6%E4%B9%A0Linux%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4-Virtualbox-4/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Grayi">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Grayi's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/04/20/re-%E9%80%9A%E8%BF%87arch-Linux%E7%9A%84%E5%AE%89%E8%A3%85%E5%AD%A6%E4%B9%A0Linux%E5%9F%BA%E6%9C%AC%E6%8C%87%E4%BB%A4-Virtualbox-4/" class="post-title-link" itemprop="url">re:通过arch Linux的安装学习Linux基本指令(Virtualbox)(4)</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2021-04-20 14:25:16 / 修改时间：14:37:35" itemprop="dateCreated datePublished" datetime="2021-04-20T14:25:16+08:00">2021-04-20</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="13-安装X窗口系统"><a href="#13-安装X窗口系统" class="headerlink" title="13.安装X窗口系统"></a>13.安装X窗口系统</h2><p><code># pacman -S xorg </code></p>
-<p>xorg就是X窗口系统，xorg是X11的一个实现，而X Window System是一个C/S结构的程序，Xorg只是提供了一个X Server，负责底层的操作当你运行一个程序的时候，这个程序会连接到X server上，由X server接收键盘鼠标输入和负责屏幕输出窗口的移动，窗口标题的样式等等。</p>
-<p><code># pacman -S xf86-input-synaptics</code></p>
-<p>input-synaptics这里指的是安装笔记本电脑的触控板接口，如果是台式机的话就没有很大的必要了。synaptics是一家公司。主要是以人机界面交互业务为主。这个接触版接口就是他们家开发的……</p>
-<p><code># pacman -S ttf-dejavu wqy-microhei</code></p>
-<p>安装字体：Dejavu 和 微米黑字体（不安装的话 后面进入桌面环境设置系统语言为简体中文的时候会出现字体显示不全的问题）。</p>
-<p>TTF（TrueTypeFont）是Apple公司和Microsoft公司共同推出的字体文件格式，随着windows的流行，已经变成最常用的一种字体文件表示方式。</p>
-<p>DejaVu是一套改造自Bitstream Vera的电脑字体，大幅扩充了Unicode所含盖的字符。DejaVu以自由版权发布，因此亦为许多自由软件采用为显示字体。</p>
-<h2 id="14-安装桌面环境"><a href="#14-安装桌面环境" class="headerlink" title="14.安装桌面环境"></a>14.安装桌面环境</h2><p>常用的两大桌面环境：GNOME和KDE,这个地方我们主要给予了plasma（KDE最新版本的安装）。啥？你问我区别？自行搜索吧兄得。</p>
-<p><code># pacman -S plasma  \\安装plasma</code></p>
-<p>Plasma 是 KDE 4 中一个关键技术 (被誉为 “KDE 的支柱”)，是用户最直观的东西。　Plasma 是“主管”桌面界面的组件：桌面、面板（经常特指任务栏面板）、以及相关元素。然而，Plasma 不仅仅是这些通常部分至界面。“桌面”自最初拥有以来未曾改变很多：典型的桌面包括快捷方式、一个面板、以及当前运行的程序图标。Plasma 旨在改变这些，融入语义学程序元素，并在简化工作流程的同时以可视化的反应把协作技术带至用户的指尖。</p>
-<p><code># pacman -S konsole  \\安装konsdle控制台终端</code><br><code># pacman -S dolphin  \\安装文件管理器</code><br><code># pacman -S kde-applications \\安装kde套件</code><br><code># systemctl enable sddm \\启用sddm显示管理器</code></p>
-<p>Simple Desktop Display Manager (SDDM) 是用于 X11 和 wayland 视窗系统的显示管理器（图形登录界面）。SDDM 完全使用 C++11 编写并支持通过 QML 改变主题。对于KDE Plasma 5，KDE 选择了 SDDM 作为 KDE Display Manager 的接替者。</p>
-<p><code># systemctl enable NetworkManger \\启用网络管理</code><br><code># pacman -S plasma-nm \\安装图形界面</code></p>
-<p>感觉差不多了，到此之后输入<code># reboot</code>后重启系统就可以进入图形界面了，到此这个篇章结束了~好累好累。</p>
 
       
     </div>
