@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+    <meta name="description" content="引言类银河战士恶魔城类（Metroidvania）游戏作为一类小众游戏，一直具有着经久不衰的魅力。由于笔者最近同样通关过几款本品类的游戏，遂撰写本文，本文旨在对类银河战士恶魔城类游戏的特点与受众进行浅明简要分析，仅供参考。 核心玩法循环游戏的定义以及核心玩法决定了品类的核心玩法循环。维基百科对类银河战士恶魔城类游戏的定义如下：  银河恶魔城游戏中通常有可供玩家探索的大型相连世界地图，但是进入地图某">
+<meta property="og:type" content="article">
+<meta property="og:title" content="类银河战士恶魔城（Metroidvania）游戏简析">
+<meta property="og:url" content="http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/index.html">
+<meta property="og:site_name" content="Grayi&#39;s Blog">
+<meta property="og:description" content="引言类银河战士恶魔城类（Metroidvania）游戏作为一类小众游戏，一直具有着经久不衰的魅力。由于笔者最近同样通关过几款本品类的游戏，遂撰写本文，本文旨在对类银河战士恶魔城类游戏的特点与受众进行浅明简要分析，仅供参考。 核心玩法循环游戏的定义以及核心玩法决定了品类的核心玩法循环。维基百科对类银河战士恶魔城类游戏的定义如下：  银河恶魔城游戏中通常有可供玩家探索的大型相连世界地图，但是进入地图某">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva1.png">
+<meta property="og:image" content="http://example.com/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva2.png">
+<meta property="og:image" content="http://example.com/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva3.png">
+<meta property="og:image" content="http://example.com/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva4.png">
+<meta property="og:image" content="http://example.com/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva5.png">
+<meta property="og:image" content="http://example.com/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva6.png">
+<meta property="og:image" content="http://example.com/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva7.png">
+<meta property="og:image" content="http://example.com/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva8.png">
+<meta property="article:published_time" content="2023-04-20T05:09:26.000Z">
+<meta property="article:modified_time" content="2023-06-02T04:50:46.203Z">
+<meta property="article:author" content="Grayi">
+<meta property="article:tag" content="Game Analysis">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva1.png">
+    
+    
+      
+        
+          <link rel="shortcut icon" href="/images/head.png">
+        
+      
+      
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+      
+      
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
+      
+    
+    <!-- title -->
+    <title>类银河战士恶魔城（Metroidvania）游戏简析</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- persian styles -->
+    
+    <!-- rss -->
+    
+    
+	<!-- mathjax -->
+	
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body class="max-width mx-auto px3 ltr">
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#" aria-label="Menu"><i class="fas fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" aria-label="Top" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fas fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a href="/friends/">Friends</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" aria-label="Previous post" href="/2023/04/26/UnityEditor-UnityHub%E5%9B%BD%E9%99%85%E7%89%88%E4%B8%8B%E8%BD%BD%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8C%97/"><i class="fas fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" aria-label="Next post" href="/2023/03/30/%E4%B8%AD%E5%9B%BD-A-%E7%B1%BB%E4%B8%9A%E4%BD%99%E6%97%A0%E7%BA%BF%E7%94%B5%E5%8F%B0%E6%93%8D%E4%BD%9C%E8%AF%81get%E2%88%9A/"><i class="fas fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" aria-label="Back to top" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" aria-label="Share post" href="#"><i class="fas fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/"><i class="fab fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&text=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&title=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&is_video=false&description=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=类银河战士恶魔城（Metroidvania）游戏简析&body=Check out this article: http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/"><i class="fas fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&title=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&title=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&title=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&title=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&name=类银河战士恶魔城（Metroidvania）游戏简析&description="><i class="fab fa-tumblr " aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&t=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-hacker-news " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E7%8E%A9%E6%B3%95%E5%BE%AA%E7%8E%AF"><span class="toc-number">2.</span> <span class="toc-text">核心玩法循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E7%89%B9%E7%82%B9"><span class="toc-number">3.</span> <span class="toc-text">核心特点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%A9%E6%B3%95%E8%AE%BE%E8%AE%A1"><span class="toc-number">3.1.</span> <span class="toc-text">玩法设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1"><span class="toc-number">3.2.</span> <span class="toc-text">关卡设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%92%E8%89%B2%E8%AE%BE%E8%AE%A1"><span class="toc-number">3.3.</span> <span class="toc-text">角色设计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%89%B9%E5%BE%81"><span class="toc-number">4.</span> <span class="toc-text">用户特征</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A5%E6%B4%BB%E7%8E%A9%E5%AE%B6%E6%95%B0%E6%8D%AE%E8%A1%A8%E5%88%86%E6%9E%90"><span class="toc-number">4.1.</span> <span class="toc-text">日活玩家数据表分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E6%B8%B8%E7%8E%A9%E8%AE%BE%E5%A4%87%E5%88%86%E6%9E%90"><span class="toc-number">4.2.</span> <span class="toc-text">用户游玩设备分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%A9%E5%AE%B6%E7%94%BB%E5%83%8F%E5%88%86%E6%9E%90"><span class="toc-number">4.3.</span> <span class="toc-text">玩家画像分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E8%87%AA%E8%BA%AB%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90"><span class="toc-number">4.4.</span> <span class="toc-text">游戏自身特征分析</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">5.</span> <span class="toc-text">参考</span></a></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index py4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        类银河战士恶魔城（Metroidvania）游戏简析
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">Grayi</span>
+      </span>
+      
+    <div class="postdate">
+      
+        <time datetime="2023-04-20T05:09:26.000Z" itemprop="datePublished">2023-04-20</time>
+        
+      
+    </div>
+
+
+      
+
+      
+    <div class="article-tag">
+        <i class="fas fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Game-Analysis/" rel="tag">Game Analysis</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>类银河战士恶魔城类（Metroidvania）游戏作为一类小众游戏，一直具有着经久不衰的魅力。由于笔者最近同样通关过几款本品类的游戏，遂撰写本文，本文旨在对类银河战士恶魔城类游戏的特点与受众进行浅明简要分析，仅供参考。</p>
+<h2 id="核心玩法循环"><a href="#核心玩法循环" class="headerlink" title="核心玩法循环"></a>核心玩法循环</h2><p>游戏的定义以及核心玩法决定了品类的核心玩法循环。维基百科对类银河战士恶魔城类游戏的定义如下：</p>
+<blockquote>
+<p>银河恶魔城游戏中通常有可供玩家探索的大型相连世界地图，但是进入地图某处的特定地点往往会有门或其他障碍物限制玩家，只有当玩家在游戏中获得特殊道具、工具、武器或能力后才能通过。这些新的提升还能帮助玩家击败更高难度的敌人并找到捷径和秘密区域，包括经常回顾已经探索过的地图区域。银河恶魔城游戏通过这样的设计使故事和关卡设计整合得更紧密，以精心设计的关卡和角色控制来鼓励玩家探索和实验，使之更投入自己的角色。 </p>
+</blockquote>
+<p>定义强调了一种机制，即<strong>锁（LOCK）-钥匙（KEY）</strong>机制。而在后续的分析中，我们也同样会发现，本机制是构成整个类银河战士恶魔城游戏的整体。<br>以《Ender Lilies:Knights Quietus of Knights》为例，简要列出其核心玩法循环，不难发现游戏的主题游玩流程是探索地图-&gt;打败BOSS-&gt;获得钥匙-&gt;探索地图，因此我们可以画出它的核心玩法循环。<br><img src="/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva1.png" alt="Metroidva1"><br>可以看出，类银河战士恶魔城类游戏的核心驱动为<strong>探索</strong>。</p>
+<h2 id="核心特点"><a href="#核心特点" class="headerlink" title="核心特点"></a>核心特点</h2><p>五十岚孝司曾谈到他认为该类型游戏具备的关键要素。其中包含设计一个地图<strong>鼓励自由探索</strong>，但仍会适时引导玩家进行主线流程，也会提供一些手段让玩家意识到自己身在何处。<br>概括来说，类银河战士恶魔城游戏是建立了一个以<strong>探索（Explore）</strong>为目的核心的，<strong>地图（Map）、角色（Character）、锁机制（Lock）</strong>相互关联组成完整系统，彼此之间的正反馈循环增强了游戏的探索性。其各个元素之间关系如下：<br><img src="/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva2.png" alt="Metroidva2"><br>接下来笔者便以三个元素为基础分析其设计。</p>
+<h3 id="玩法设计"><a href="#玩法设计" class="headerlink" title="玩法设计"></a>玩法设计</h3><p>玩法上，存在<strong>锁（LOCK）机制</strong>。<br>锁机制是整个类银河战士恶魔城游戏中的核心机制。所谓锁机制，即通过对地图&#x2F;技能“上锁”的形式，对玩家的探索路线进行一定的限制。这种限制使得关卡设计者可以在保证地图具有相对较高自由的探索性的情况下，为游戏提供完整的流程叙事（除碎片化叙事之外）和地图重复探索体验。如《Ender Lilies:Knights Quietus of Knights》会在游戏后期地牢中获得开锁技能，打开前期无法经过的地方；《Touhou Luna Nights》击败每个区域地图关底BOSS时会存在一个可以获得钥匙的房间，要是可以通往其他区域地图。<br>一般的类银河战士恶魔城游戏提供两种锁机制，分别为<strong>技能锁</strong>与<strong>关卡锁</strong>：</p>
+<table>
+<thead>
+<tr>
+<th>锁机制</th>
+<th>描述</th>
+<th>缺点</th>
+<th>关卡联系</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>关卡锁</td>
+<td>提供解锁新地图区块所需的钥匙，一般由地图区块的BOSS掉落</td>
+<td>获得方式相对简单，用途单一</td>
+<td>解锁新地图区块</td>
+</tr>
+<tr>
+<td>技能锁</td>
+<td>提供探索新地图区块所必需的技能（二段跳、爬墙、冲刺、滑铲等），一般由地图区块的BOSS掉落</td>
+<td>相对更为考验关卡策划的地图设计能力，容易出现质量较低的地图</td>
+<td>通过技能操作解锁新地图区块或通过技能重复探索旧地图隐藏道具、剧情</td>
+</tr>
+</tbody></table>
+<h3 id="关卡设计"><a href="#关卡设计" class="headerlink" title="关卡设计"></a>关卡设计</h3><p>关卡设计上，地图设计为多个区块及其从属区块组成了一张<strong>相连的、非线性的大地图</strong>，并且地图具有<strong>可重复探索的特性</strong>；相连非线性的大地图以及区域地图区块分割设计使得<strong>至少有两条路线可以连接区域地图区块</strong>。<br>类银河战士恶魔城类游戏小地图设计模式一般分为两种，分别是以空洞骑士为代表地形连接地图与传统的块状连接地图，两种小地图设计形式各有千秋。两种类型的区别如下表：</p>
+<table>
+<thead>
+<tr>
+<th>地图设计形式</th>
+<th>代表作品</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>地形链接图</td>
+<td>《Hollow Knight》</td>
+<td>可以将区块地图设计的相对复杂，提供了更多的探索乐趣</td>
+<td>对地图设计师的要求极高，很容易弄巧成拙</td>
+</tr>
+<tr>
+<td>块状连接图</td>
+<td>《Bloodstained：Ritual of the Night》</td>
+<td>区块间连接位置明显，容易辨识和进行区块间的移动</td>
+<td>区块地图设计容易简单化，减小地图的探索性。</td>
+</tr>
+</tbody></table>
+<p>下图分别为《Hollow Knight》与《东方月神夜》的地图设计，恰如其分的包含了笔者叙述的两种情况。<br><img src="/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva3.png" alt="Metroidva3"><br>东方月神夜为代表的块状连接图：<br><img src="/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva4.png" alt="Metroidva4"></p>
+<h3 id="角色设计"><a href="#角色设计" class="headerlink" title="角色设计"></a>角色设计</h3><p>在角色设计上，重复探索与锁机制所获得的物品会以某种形式正反馈至角色，并反馈于地图探索。<br>恶魔城的偏向使得类银河战士恶魔城游戏的角色<strong>具有一定的成长性质</strong>。在地图探索的过程中，玩家可以在隐藏区域寻找到道具物品、金钱、技能等对角色提升、地图探索有一定帮助的物品。部分具有等级提升成长元素。</p>
+<h2 id="用户特征"><a href="#用户特征" class="headerlink" title="用户特征"></a>用户特征</h2><p>从性格上，类银河战士恶魔城类游戏更适合具有强烈探索精神的玩家，能够应对复杂但是具有自由解法的挑战。<br>从游戏诉求角度，类银河战士恶魔城游戏玩家对游戏具有“趣味性”“创新性”“探索性”的执着，对游戏画质诉求相对较低。<br>从消费习惯的角度，此品类游戏玩家具有长期并稳定的游戏消费习惯，同时游戏依赖性以及黏度高。</p>
+<h3 id="日活玩家数据表分析"><a href="#日活玩家数据表分析" class="headerlink" title="日活玩家数据表分析"></a>日活玩家数据表分析</h3><p>通过SteamDB本身的比较功能，比较几款相对代表性的该品类游戏的历史日活玩家数据表：<br><img src="/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva5.png" alt="Metroidva5"><br>以年份为维度进行分析，日活玩家数量相对稳定且具有增加趋势，不存在数据断层现象。说明此游戏品类的玩家具有相对较高的的用户黏度。<br>为了使数据具有普适性，笔者从SteamDB中通过“Metroidvania”关键词对游戏进行筛选，选取日活玩家最多的《Hollow Knight》作为类银河战士恶魔城类游戏的代表进行用户分析：<br><img src="/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva6.png" alt="Metroidva6"><br>使用Web Scraper工具选取豆瓣中对《Hollow Knight》的短评进行爬取获得数据集，其中包含用户昵称、游玩设备以及短评，获得数据共5464条。</p>
+<h3 id="用户游玩设备分析"><a href="#用户游玩设备分析" class="headerlink" title="用户游玩设备分析"></a>用户游玩设备分析</h3><p>清洗无关数据，使用新数据集对游玩设备进行数据分析，各游玩设备占比如下:<br><img src="/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva7.png" alt="Metroidva7"><br>根据饼图可以看出，游玩类银河战士恶魔城游戏的玩家大多为端游玩家以及Switch玩家，同时具有少数的主机玩家。<br>PC玩家相对来讲具有丰富的游戏经验（尤其是小众游戏类型），对于游戏（尤其是独立游戏）付费具有高用户黏度和稳定性。Switch玩家多与便携、游戏创新性挂钩，由于Switch设备高昂售价以及相对中庸的性能，Switch玩家同样具有稳定甚至高于PC玩家游戏付费的稳定性以及对游戏创新性与趣味性的诉求。</p>
+<h3 id="玩家画像分析"><a href="#玩家画像分析" class="headerlink" title="玩家画像分析"></a>玩家画像分析</h3><p>数据集中的短评进行数据清洗，清洗掉副词、量词等数据，同时去除与游戏内容关联较强的数据（如游戏中的地名、角色名），保留相对有品类概括性的数据进行词频分析，将词频数据制作成词云（玩家画像）如下：<br><img src="/.com//04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/Metroidva8.png" alt="Metroidva8"><br>通过词云明显的看出玩家对类银河战士恶魔城游戏相关的游戏诉求：设计、画风、故事（剧情）、配乐、氛围、地图、类魂。</p>
+<h3 id="游戏自身特征分析"><a href="#游戏自身特征分析" class="headerlink" title="游戏自身特征分析"></a>游戏自身特征分析</h3><p>类银河战士恶魔城游戏的关键词是<strong>“探索”</strong>，一切设计皆是围绕探索展开。对此品类游戏感兴趣的玩家，本身<strong>具有高度的探索欲和耐心</strong>，部分游戏会加入类魂元素，更为考验玩家对挑战的态度。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a target="_blank" rel="noopener" href="https://tendcode.com/tool/word-cloud/">在线词云生成器</a><br><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/295152089">游戏类型Metroidvania（类恶魔城银河战士）是什么意思-锁机制</a><br><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%E6%B8%B8%E6%88%8F">类银河战士恶魔城游戏-维基百科</a><br><a target="_blank" rel="noopener" href="https://steamdb.info/charts/?compare=283640,367520,400910,588650,692850,774361,851100,1057090,1306630,1369630">几款类银河战士恶魔城游戏的品类用户增长数据比较</a><br><a target="_blank" rel="noopener" href="https://www.lzltool.cn/word-frequency">词频分析工具</a></p>
+
+  </div>
+</article>
+
+
+
+        
+          <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="/tags/">Tag</a></li>
+         
+          <li><a href="/friends/">Friends</a></li>
+         
+          <li><a href="/about/">About</a></li>
+         
+          <li><a href="/search/">Search</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%95%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E7%8E%A9%E6%B3%95%E5%BE%AA%E7%8E%AF"><span class="toc-number">2.</span> <span class="toc-text">核心玩法循环</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E7%89%B9%E7%82%B9"><span class="toc-number">3.</span> <span class="toc-text">核心特点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%A9%E6%B3%95%E8%AE%BE%E8%AE%A1"><span class="toc-number">3.1.</span> <span class="toc-text">玩法设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1"><span class="toc-number">3.2.</span> <span class="toc-text">关卡设计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%A7%92%E8%89%B2%E8%AE%BE%E8%AE%A1"><span class="toc-number">3.3.</span> <span class="toc-text">角色设计</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E7%89%B9%E5%BE%81"><span class="toc-number">4.</span> <span class="toc-text">用户特征</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%97%A5%E6%B4%BB%E7%8E%A9%E5%AE%B6%E6%95%B0%E6%8D%AE%E8%A1%A8%E5%88%86%E6%9E%90"><span class="toc-number">4.1.</span> <span class="toc-text">日活玩家数据表分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%94%A8%E6%88%B7%E6%B8%B8%E7%8E%A9%E8%AE%BE%E5%A4%87%E5%88%86%E6%9E%90"><span class="toc-number">4.2.</span> <span class="toc-text">用户游玩设备分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8E%A9%E5%AE%B6%E7%94%BB%E5%83%8F%E5%88%86%E6%9E%90"><span class="toc-number">4.3.</span> <span class="toc-text">玩家画像分析</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%B8%B8%E6%88%8F%E8%87%AA%E8%BA%AB%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90"><span class="toc-number">4.4.</span> <span class="toc-text">游戏自身特征分析</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83"><span class="toc-number">5.</span> <span class="toc-text">参考</span></a></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.facebook.com/sharer.php?u=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/"><i class="fab fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://twitter.com/share?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&text=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.linkedin.com/shareArticle?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&title=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://pinterest.com/pin/create/bookmarklet/?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&is_video=false&description=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=类银河战士恶魔城（Metroidvania）游戏简析&body=Check out this article: http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/"><i class="fas fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://getpocket.com/save?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&title=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://reddit.com/submit?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&title=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.stumbleupon.com/submit?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&title=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://digg.com/submit?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&title=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="http://www.tumblr.com/share/link?url=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&name=类银河战士恶魔城（Metroidvania）游戏简析&description="><i class="fab fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" target="_blank" rel="noopener" href="https://news.ycombinator.com/submitlink?u=http://example.com/2023/04/20/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%EF%BC%88Metroidvania%EF%BC%89%E6%B8%B8%E6%88%8F%E7%AE%80%E6%9E%90/&t=类银河战士恶魔城（Metroidvania）游戏简析"><i class="fab fa-hacker-news fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+        <a id="menu" class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fas fa-bars fa-lg" aria-hidden="true"></i> Menu</a>
+        <a id="toc" class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fas fa-list fa-lg" aria-hidden="true"></i> TOC</a>
+        <a id="share" class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fas fa-share-alt fa-lg" aria-hidden="true"></i> Share</a>
+        <a id="top" style="display:none" class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fas fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a>
+    </div>
+
+  </div>
+</div>
+
+        
+        <footer id="footer">
+  <div class="footer-left">
+    Copyright &copy;
+    
+    
+    2020-2023
+    Grayi
+  </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+        <!--
+       --><li><a href="/">Home</a></li><!--
+     --><!--
+       --><li><a href="/archives/">Writing</a></li><!--
+     --><!--
+       --><li><a href="/tags/">Tag</a></li><!--
+     --><!--
+       --><li><a href="/friends/">Friends</a></li><!--
+     --><!--
+       --><li><a href="/about/">About</a></li><!--
+     --><!--
+       --><li><a href="/search/">Search</a></li><!--
+     -->
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+    </div>
+    <!-- styles -->
+
+
+
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'"/>
+
+
+    <!-- jquery -->
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" crossorigin="anonymous"></script> 
+
+
+
+
+<!-- clipboard -->
+
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.7/clipboard.min.js" crossorigin="anonymous"></script> 
+  
+  <script type="text/javascript">
+  $(function() {
+    // copy-btn HTML
+    var btn = "<span class=\"btn-copy tooltipped tooltipped-sw\" aria-label=\"Copy to clipboard!\">";
+    btn += '<i class="far fa-clone"></i>';
+    btn += '</span>'; 
+    // mount it!
+    $(".highlight table").before(btn);
+    var clip = new ClipboardJS('.btn-copy', {
+      text: function(trigger) {
+        return Array.from(trigger.nextElementSibling.querySelectorAll('.code')).reduce((str,it)=>str+it.innerText+'\n','')
+      }
+    });
+    clip.on('success', function(e) {
+      e.trigger.setAttribute('aria-label', "Copied!");
+      e.clearSelection();
+    })
+  })
+  </script>
+
+
+<script src="/js/main.js"></script>
+
+<!-- search -->
+
+<!-- Google Analytics -->
+
+<!-- Baidu Analytics -->
+
+<!-- Cloudflare Analytics -->
+
+<!-- Umami Analytics -->
+
+<!-- Disqus Comments -->
+
+<!-- utterances Comments -->
+
+</body>
+</html>
