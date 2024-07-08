@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="清和的个人博客">
+<meta name="description" content="三杯两盏淡酒">
+<meta name="theme-color" content="#000">
+<title>MistRaven</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1720405194524">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/media/css/gemini.css">
+
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
+
+<link href="/media/hljs/styles/androidstudio.css"
+  rel="stylesheet">
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+
+</head>
+
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="gemini">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
+          
+            <a href="/" class="brand">
+              <span>MistRaven</span>
+            </a>  
+          
+        </div>
+        
+          <p class="subtitle">三杯两盏淡酒</p>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/" target="_self">
+                  <i class="fa fa-home"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags/" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+              
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about/" target="_self">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+            
+              <li class="nav-item ">
+                <a href="/friends/" target="_self">
+                  
+                    <i class="fa fa-address-book"></i> 友链
+                  
+                </a>
+              </li>
+            
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout  gemini">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name">清和</p>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">12</span>
+        <span class="site-item-stat-name">文章</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">10</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">10</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
+  
+    
+      <div class="sidebar-item" style="border-top: 1px dotted #ccc; margin-top: 10px;">
+      </div>
+    
+  
+  
+    <div class="sidebar-item sidebar-item-social">
+      <div class="social-item">
+        
+          
+            <a href="https://github.com/echosorari">
+              <i class="fa fa-github-alt" title="Github"></i>
+            </a>
+          
+            <a href="mailto:sorari@qq.com">
+              <i class="fa fa-envelope" title="E-mail"></i>
+            </a>
+          
+            <a href="https://steamcommunity.com/profiles/76561199271665931/">
+              <i class="fa fa-steam" title="Steam"></i>
+            </a>
+          
+        
+        
+      </div>
+    </div>
+  
+
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = 'gemini';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box tag-line box-shadow-wrapper">
+          <section class="section tags-section posts-expand bg-color">
+            <div class="padding-wrapper">
+  <div class="tag-timeline-box">
+    <div class="tag-timeline-wrapper">
+      <div class="tag-timeline-title">
+        <h2>
+          Unity
+          <small>标签</small>
+        </h2>
+      </div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <a href="https://echosorari.github.io/post/unityeditor-and-unityhub-guo-ji-ban-xia-zai-shi-yong-zhi-bei/">
+        <div class="motion-warpper">
+          <div class="tag-post-node">
+            <h1>
+              04-26
+              <small>Unity国际版下载使用指北</small>
+            </h1>
+          </div>
+        </div>
+      </a>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+  </div>
+</div>
+          </section>
+        </div>
+      </div>
+    </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | © 2019-2020 Theme By <a href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+    </div>
+  </footer>
+  
+  
+  <div class="gemini back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+  
+  
+</div>
+<script>
+
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
+
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
+
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = 'false'
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target","_blank");
+      }
+    })
+  }
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
+
+</script>
+  </div>
+</body>
+<input hidden id="copy" />
+<script>
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        console.log('复制操作频率过高');
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+</script>
+<script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500
+  });
+</script>
+
+<!-- <div class="search-mask" id="search_mask">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input type="text" placeholder="搜索">
+      </div>
+      <i class="fa fa-times-circle"></i>
+    </div>
+    <div class="result">
+      
+      <div class="item">
+        <a class="result-title" href="https://echosorari.github.io/post/lesslessming-zhao-de-na-xie-shi-er-greatergreater-jie-yu/"" data-c="
+          &lt;p&gt;在《明朝的那些事儿》这本书结尾，当年明月还在文末及后记中加了一段意味深长的文字，今摘录部分，与各位共品。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;从俗世的角度，徐宏祖是个怪人，这人不考功名，不求做官，不成家立业，按很多人的说法，是毁了。&lt;br&gt;
+我知道，很多人还会说，这种生活荒谬，是不符合常规的，是不正常的，是缺根弦的，是精神有问题的。&lt;br&gt;
+我认为，说这些话的人，是吃饱了，撑的，人只活一辈子，如何生活，都是自己的事，自己这辈子浑浑噩噩地没活好，厚着脸皮还来指责别人，有多远，就去滚多远。&lt;br&gt;
+此前，我讲过很多东西，很多兴衰起落、很多王侯将相、很多无奈更替，很多风云变幻，但这件东西，我个人认为，是最重要的。&lt;br&gt;
+因为我要告诉你，所谓千秋霸业，万古流芳，以及一切的一切，只是粪土。先变成粪，再变成土。&lt;br&gt;
+现在你不明白，将来你会明白，将来不明白，就再等将来，如果一辈子都不明白，也行。&lt;br&gt;
+而最后讲述的这件东西，它超越上述的一切，至少在我看来。&lt;br&gt;
+但这件东西，我想了很久，也无法用准确的语言，或是词句来表达，用最欠揍的话说，是只可意会，不可言传。&lt;br&gt;
+然而我终究是不欠揍的，在遍阅群书，却无从开口之后，我终于从一本不起眼，且无甚价值的读物上，找到了这句适合的话。&lt;br&gt;
+这是一本台历，一本放在我面前，不知过了多久，却从未翻过，早已过期的台历。&lt;br&gt;
+我知道，是上天把这本台历放在了我的桌前，它看着几年来我每天的努力，始终的坚持，它静静地，耐心地等待着终结。&lt;br&gt;
+它等待着，在即将结束的那一天，我将翻开这本陪伴我始终，却始终未曾翻开的台历，在上面，有着最后的答案。&lt;br&gt;
+我翻开了它，在这本台历上，写着一句连名人是谁都没说明白的名人名言。&lt;br&gt;
+是的，这就是我想说的，这就是我想通过徐霞客所表达的，足以藐视所有王侯将相，最完美的结束语：&lt;br&gt;
+成功只有一个——按照自己的方式，去度过人生。&lt;br&gt;
+很多人问，为什么看历史，很多人回答，以史为鉴。&lt;br&gt;
+现在我来告诉你，以史为鉴，是不可能的。&lt;br&gt;
+因为我发现，其实历史没有变化，技术变了，衣服变了，饮食变了，这都是外壳，里面什么都没变化，还是几千年前那一套，转来转去，该犯的错误还是要犯，该杀的人还是要杀，岳飞会死，袁崇焕会死，再过一千年，还是会死。&lt;br&gt;
+所有发生的，是因为它有发生的理由，能超越历史的人，才叫以史为鉴，然而我们终究不能超越，因为我们自己的欲望和弱点。&lt;br&gt;
+所有的错误，我们都知道，然而终究改不掉。&lt;br&gt;
+能改的，叫做缺点，不能改的，叫做弱点。&lt;br&gt;
+顺便说下，能超越历史的人，还是有的，我们管这种人，叫做圣人。&lt;br&gt;
+以上的话，能看懂的，就看懂了，没看懂的，就当是说疯话。&lt;br&gt;
+最后，说说我自己的想法。&lt;br&gt;
+因为看得历史比较多，所以我这个人比较有历史感，当然，这是文明的说法，粗点讲，就是悲观。&lt;br&gt;
+这并非开玩笑，我本人虽然经常幽默幽默，但对很多事情都很悲观，因为我经常看历史（就好比很多人看电视剧一样），不同的是，我看到的那些古文中，只有悲剧结局，无一例外。&lt;br&gt;
+每一个人，他的飞黄腾达和他的没落，对他本人而言，是几十年，而对我而言，只有几页，前一页他很牛，后一页就怂了。&lt;br&gt;
+王朝也是如此。&lt;br&gt;
+真没意思，没意思透了。&lt;br&gt;
+但我坚持幽默，是因为我明白，无论这个世界有多绝望，你自己都要充满希望。&lt;br&gt;
+人生并非如某些人所说，很短暂，事实上，有时候，它很漫长，特别是对苦难中的人，漫长得想死。&lt;br&gt;
+但我坚持，无论有多绝望，无论有多悲哀，每天早上起来，都要对自己说，这个世界很好，很强大。&lt;br&gt;
+这句话，不是在满怀希望光明时说的，很绝望、很无助，很痛苦，很迷茫的时候，说这句话。&lt;br&gt;
+要坚信，你是一个勇敢的人。&lt;br&gt;
+因为你还活着，活着，就要继续前进。&lt;/p&gt;
+">《明朝的那些事儿》结语</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://echosorari.github.io/post/hello-world-again/"" data-c="
+          &lt;p&gt;毕业，是一场兵荒马乱。&lt;br&gt;
+盛夏无止尽的蝉鸣中，一顿不算完美的散伙饭，一张青涩的毕业照，一场拒绝伤感的KTV，一次夜爬笔架山。补全在学校最后一块拼图，挥手离去。大学篇，堂堂完结。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;畢業&#34;&gt;畢業&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;时光一逝永不回&lt;br&gt;
+往事只能回味&lt;br&gt;
+——韩宝仪《往事只能回味》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;毕业前要求每个人交一张生活照，翻开尘封已久的手机相册。追忆往事，在破碎的记忆中缝缝补补，似乎生活过的也还算丰富多彩。&lt;br&gt;
+故事从SDUST LUG开始，那时还没有LUG，仅仅是SiHuan的兴趣小组。一起玩东方，打绯想天则。通过小组认识了许多有意思的人，包括对我后来产生了重大影响的狸、江文、Kontonl。第一次班委团建和宿舍聚餐；在自律会办公室过了第一个大学生日；被λ拉着接触Kali，这也是后来加入SEC小组的契机；爬上珠山森林公园，喊出散人的那句“我向往自由”；燃香拜佛，随心而行；专业聚餐，两班班长仪式性的交杯酒；参加志愿，看到海上明月共潮生……&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1719039113924.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+当然，没有一场轰轰烈烈的恋爱，没有一次释怀的毕业旅行，甚至没有一张寂寥的背影照。遗憾总是贯穿人生始终。从小时候到现在总觉得很难用成功或者失败定义一个人的生活。从常人的眼光来看，没有考上一个好的学校，没有找到赚钱多的或者说体面的工作，没有成为所有人眼中耀眼的星星，这就是失败。可是生活中每个选择皆是自己所想，每个过程都是自己去体验的。无论做了什么，也许说服自己接受才是最重要的。&lt;br&gt;
+夜晚与凌晨街头的送别，没有“晚风拂柳笛声残”的凄凉，只有沉默的再见。回家未曾感觉到的寂寥和孤单，在意识到许久不会再相见后突然充斥满内心。好在如今并非往昔车马传信，很容易就能在互联网上聊天。但各不相同的生活再不会如从前相互交叉。或激情或麻木，我们终将分别，走在自己的路上。&lt;br&gt;
+别了。山遥路远，有缘再见。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;你走吧 趁着落日长天&lt;br&gt;
+你走吧 辞去山遥路远&lt;br&gt;
+愿夜里秋风温暖&lt;br&gt;
+街头不寒&lt;br&gt;
+你走吧 趁着天色未晚&lt;br&gt;
+你走吧 明知道阻且难&lt;br&gt;
+我献上明月一盏&lt;br&gt;
+照满河山&lt;br&gt;
+—— Chilichill 《山遥路远》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://echosorari.github.io/post-images/1719037230555.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;h2 id=&#34;未来&#34;&gt;未来&lt;/h2&gt;
+&lt;p&gt;从2021年就开始写自己的博客，算来算去三年有余。不少文章都直接遗失了，没有好好做好备份，仅仅留下了个“残本”。从最开始Catop同学的的服务器上跑起来的Typecho到在Github Page上部署的Hexo再到如今的Gridea，之后甚至有可能再转回Hexo。博客也是一直因为个人原因写的断断续续的。所以第一件事就是把写博客的习惯重新拾起，大概保持一两周一篇一个月两篇的进度记录。&lt;br&gt;
+之后就是改掉曾经用的马甲、换掉域名，以一种新的状态重新面对之后要到来的挑战。同时也会重新整理这个博客中还存在的文章，并且重写一次尽可能的保证文章 的可读性。毕竟我的生活总归是画着一个四分休止符，还有众多事情等待着我去一件件解决。&lt;br&gt;
+我们共勉。&lt;/p&gt;
+">Hello World,  Again?</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://echosorari.github.io/post/2023-shu-dan-pian-dan/"" data-c="
+          &lt;p&gt;2023即将结束，特此列出2023年所看过有记录在案的书籍、番剧、电影。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;No&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Name&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Author&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Tag&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;State&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;四叠半神话大系&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;森见登美彦&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;流浪地球2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;郭帆&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Air&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Key&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;番剧&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;薇薇 -萤石眼之歌-&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;WIT STUDIO&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;番剧&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;[C]THE MONEY OF SOUL AND POSSIBILITY CONTROL&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;中村健治 / 铃木清崇&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;番剧&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;病隙碎笔&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;史铁生&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;中国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;米姆&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;利莫·士弗曼&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;学术研究&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;铃芽之旅&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;新海诚&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;天气之子&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;新海诚&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;10&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;最强阴阳师的异世界转生记&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;小玲危一&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;番剧&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;11&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;有顶天家族&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;森见登美彦&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;12&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;有顶天家族2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;森见登美彦&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;13&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;地铁三部曲&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Dmitry Glukhovsky&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;14&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;三体：黑暗森林&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;刘慈欣&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;中国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;15&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;三体：死神永生&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;刘慈欣&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;中国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;16&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;孤独摇滚！&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;芳文社&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;番剧&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;17&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;夏日重现&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;田中靖规&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;番剧&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;18&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;相约星期二&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;米奇·阿尔博姆&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;19&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;龙樱&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;秦建日子&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;番剧&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;20&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;当我在跑步的时候我在想些什么&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;村上春树&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;21&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;天空之城&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;宫崎骏&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;22&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;新世纪福音战士&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;庵野秀明&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;番剧&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;23&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;EVA:Air/真心为你&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;庵野秀明&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;番剧&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;24&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;奥本海默&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;克里斯托弗·诺兰&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+">2023书单/片单</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://echosorari.github.io/post/zhong-guo-a-lei-ye-yu-wu-xian-dian-tai-cao-zuo-zheng-get/"" data-c="
+          &lt;p&gt;从好奇开始，一步步报名考试拿到了中国A类业余无限电台操作证，在此进行记录和习题链接，以供好奇的孩子参考。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;奇奇怪怪的过程&#34;&gt;奇奇怪怪的过程&lt;/h2&gt;
+&lt;p&gt;一切的开始起源于各种游戏中出现的无线电通信（《消光》）让中二的我觉得要学一门有用的通讯手段即使在后末日也不至于失联~~（这是可以说的么）~~&lt;br&gt;
+之后我就在bilibili刷到了这么一个视频 ↓&lt;br&gt;
+&lt;a href=&#34;https://www.bilibili.com/video/BV1HG4y1j79t/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=f2399ad1533986f21d7ebfb497599fc2&#34;&gt;【不止游戏】一个视频教你取得无线电执照！&lt;/a&gt;&lt;br&gt;
+里面所有内容都介绍的十分详细了，包括但不限于&lt;strong&gt;操作证考取，呼号获取，设备证获取&lt;/strong&gt;，可以说是一份非常详实的无线电执照获取攻略。&lt;br&gt;
+恰逢农历新年，于是我就直接咨询了在电信学院精通电信自动化的初学长关于无线电资格证相关事宜。然后得知考试是每年12月的事情，其中去年和前年都因为疫情推迟了。2022年的推迟到了2023年2月28日进行。也就是说今年理论上赶不上了，所以就作为待办事项暂时搁置。&lt;br&gt;
+2月10日和kotori师傅聊天的时候发现泰安的报名考试非常时间非常非常近，然后就相约2月25号去考无线电A类资格证，然后就有了泰山之旅。期间顺便拜访了山东科技大学泰安校区西校区。作为老校区整个学校建筑透漏着一股子古朴的气息。&lt;br&gt;
+对了，这个地方就不得不提我们的kotori同学虽然指导着我报同一场次考试，但是我们俩仍然报了不同的场次这件事。苦逼的我需要上午九点就到达考点在外面等待准备，总觉得自己没有复习好所以考前的晚上也没有睡好，索性起来看了会题目。&lt;br&gt;
+考试的形式是随机30道选择题，我所在的地区考试使用的是机考的形式，不同地区可能有不同差异。同时，山东省各地考取无线电台操作证是完全免费的，包括邮寄证书的费用也由机构本身承担，所以山东省十分鼓励大家去考取相关证明哈哈。&lt;br&gt;
+考试虽然是即刻出结果的，但是等待证书批准邮寄下来还是需要一定的时间的，这段时间就老实回学校等候啦！&lt;br&gt;
+&lt;s&gt;你怎么知道我三分钟就交卷然后错了一道题&lt;/s&gt;&lt;br&gt;
+2023.2.26 拿到了A类业余无线电台操作证。&lt;/p&gt;
+&lt;h2 id=&#34;一些可能有用的快速攻略指南&#34;&gt;一些可能有用的快速攻略指南&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.jimmytian.com/archives/crac-aro-licence-a-review-guide.html&#34;&gt;中国 A 类业余无线电台操作证快速复习指北&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://iloli.moe/ham/202107272038.html&#34;&gt;中国无线电协会业余电台 A 类操作证书笔记&lt;/a&gt;&lt;br&gt;
+不过我还是建议直接抱着小程序里面的365道题开刷&lt;sub&gt;毕竟难度并不是非常高提前准备也可以搞定，攻略可以用来做后续补充&lt;/sub&gt;&lt;/p&gt;
+">中国 A 类业余无线电台操作证GET</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://echosorari.github.io/post/unityeditor-and-unityhub-guo-ji-ban-xia-zai-shi-yong-zhi-bei/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;本文面向希望使用相对纯净环境以及不愿意接受Unity大中华区三天许可证激活的开发者。国际版Unity提供了相对更长的许可证激活周期（三个月）。需要注意的是，国际版的Unity Editor与大中华区共用进行游戏开发的时候有极低的概率出现错误。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- more --&gt;
+&lt;p&gt;针对Unity大中华区对国区Unity质量堪忧的“本土化”操作，本文特提供国际版Unity的下载与使用方法以供读者使用，如有错误欢迎指出。&lt;/p&gt;
+&lt;p&gt;附:&lt;a href=&#34;https://zhuanlan.zhihu.com/p/150326133&#34;&gt;中国Unity给开发者社区的一封信&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;环境参考&#34;&gt;环境参考&lt;/h2&gt;
+&lt;p&gt;PC系统环境：Win11 21H2&lt;br&gt;
+&lt;s&gt;曾用测试环境：Ubuntu18.04&lt;/s&gt;&lt;br&gt;
+代理工具：Clash for Windows v0.20.19&lt;br&gt;
+Unity Hub版本：Unity Hub 3.4.2&lt;br&gt;
+Unity Editor版本：Unity 2020.3.41f1&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;P.S. Unity Hub对于Unix/Linux环境仅限Ubuntu16.04、18.04和CentOS 7。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
+&lt;h3 id=&#34;区分unity国际版与unity中国特供版区别&#34;&gt;区分Unity国际版与Unity中国特供版区别&lt;/h3&gt;
+&lt;p&gt;为防止使用国际版Unity的开发者下载到Unity中国特供版，笔者特提供部分区分两个版本的方法以供读者区分：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;Unity国际版&lt;/th&gt;
+&lt;th&gt;Unity中国特供&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;访问网址&lt;/td&gt;
+&lt;td&gt;www.unity.com&lt;/td&gt;
+&lt;td&gt;www.unity.cn&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;账号注册&lt;/td&gt;
+&lt;td&gt;仅需邮箱&lt;/td&gt;
+&lt;td&gt;需要邮箱，并绑定手机号&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Unity Hub版本后缀&lt;/td&gt;
+&lt;td&gt;f1&lt;/td&gt;
+&lt;td&gt;c1或c后缀存在c字母&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Unity Editor版本后缀&lt;/td&gt;
+&lt;td&gt;f1&lt;/td&gt;
+&lt;td&gt;c1或c后缀存在c字母&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;许可证激活&lt;/td&gt;
+&lt;td&gt;72hrs&lt;/td&gt;
+&lt;td&gt;3months&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;卸载并清除pc已经下载的unity开发环境&#34;&gt;卸载并清除PC已经下载的Unity开发环境&lt;/h3&gt;
+&lt;p&gt;卸载已经安装的中国版本Unity Hub并且清除&lt;code&gt;C:\Users\你的用户名\AppData\Roaming\&lt;/code&gt;目录下的Unity Hub文件夹以及Unity文件夹。&lt;/p&gt;
+&lt;h3 id=&#34;具备vpn科学上网的代理工具&#34;&gt;具备VPN/科学上网的代理工具&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;科学上网是所有操作的大前提&lt;/strong&gt;，如果不具有科学上网能力，是无法注册国际版Unity ID的（无法获得相对长时间的许可证激活），后续账号登陆也无法走国际区。&lt;br&gt;
+如果你使用的为VPN，可以直接进行下列步骤。&lt;br&gt;
+如果你使用的为v2ray/clash等代理软件，由于如Unity Hub等软件不遵循系统代理，请按照如下方式进行操作：&lt;/p&gt;
+&lt;h4 id=&#34;具有tun-mode模式的代理&#34;&gt;具有TUN Mode模式的代理：&lt;/h4&gt;
+&lt;p&gt;打开代理软件的TUN Mode模式。TUN 模式可以接管其流量并交由 CFW 处理，使得Unity Hub强制经过代理。&lt;/p&gt;
+&lt;h4 id=&#34;不具有tun-mode模式的代理&#34;&gt;不具有TUN Mode模式的代理：&lt;/h4&gt;
+&lt;p&gt;对于没有TUN Mode模式的代理软件，可以通过使系统全部通过浏览器HTTP/HTTPS代理的方式强制使应用经过代理。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;将unity.com和unity3d.com后缀的网址加入代理列表&lt;/li&gt;
+&lt;li&gt;安装Unity Hub完毕后，建立启动脚本unity_hub_start.bat：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;@echo off
+% 端口为浏览器代理地址端口，具体根据实际情况变动 %
+set HTTP_PROXY=http://127.0.0.1:1080
+set HTTPS_PROXY=http://127.0.0.1:1080
+% 启动地址为打开应用的地址 %
+start &amp;quot;&amp;quot; &amp;quot;C:\Program Files\Unity Hub\Unity Hub.exe&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;注册国际unity-id&#34;&gt;注册国际Unity ID&lt;/h3&gt;
+&lt;p&gt;挂起代理后，通过https://unity.com/ 访问Unity国际官网，点击右上角图标，选择“Create a Unity ID”，输入邮箱进行注册。使用邮箱尽量为非国区邮箱，优先使用Google邮箱、Outlook邮箱进行注册。&lt;br&gt;
+请注意区分注册，Unity大中华区注册需要填写并绑定手机号，Unity国际版不需要。&lt;/p&gt;
+&lt;h2 id=&#34;下载并安装unity-hub&#34;&gt;下载并安装Unity Hub&lt;/h2&gt;
+&lt;p&gt;如果已经使用VPN或挂载代理，直接访问&lt;a href=&#34;www.unity.com&#34;&gt;Unity官网&lt;/a&gt;点击下载并安装Unity Hub即可。&lt;br&gt;
+下载完成后，&lt;strong&gt;一定记得打开代理的TUN Mode功能或者使用脚本启动&lt;/strong&gt;！启动后首先观察左上角Unity Hub的版本号判断是否为国际版（如图），如果不是，删除&lt;code&gt;C:\Users\你的用户名\AppData\Roaming\&lt;/code&gt;目录下的Unity Hub文件夹以及Unity文件夹并重试。&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718619284091.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+点击登录，注意唤起界面。下图为https://id.unity.cn/ 界面：&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718619289438.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+正确的国际版登录界面为https://id.unity.com/ 下图：&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718619293752.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+登录过期后，如果不愿意登录也可以选择通过导入国际版激活许可证的方式使用Unity。&lt;/p&gt;
+&lt;h2 id=&#34;下载并安装unity-editor&#34;&gt;下载并安装Unity Editor&lt;/h2&gt;
+&lt;h4 id=&#34;通过unity-hub直接下载安装&#34;&gt;通过Unity Hub直接下载安装&lt;/h4&gt;
+&lt;p&gt;在代理模式下，理论上可以直接通过Unity Hub安装相应版本的Unity Editor，下载完毕后注意观察Editor版本后缀是否为国际版后缀。&lt;/p&gt;
+&lt;h4 id=&#34;通过三方网站下载安装&#34;&gt;通过三方网站下载安装&lt;/h4&gt;
+&lt;p&gt;考虑到仍有下载到中国特供版Unity的可能，特提供一个收集官方Installer和BT种子的项目：&lt;br&gt;
+&lt;a href=&#34;https://unityitellyou.github.io/&#34;&gt;Unity I Tell You&lt;/a&gt;&lt;br&gt;
+本部分内容参考&lt;a href=&#34;https://zhuanlan.zhihu.com/p/148669073&#34;&gt;如何下载原版Unity&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
+&lt;p&gt;通过以上步骤，你已经可以正常使用国际版的Unity Hub以及Unity Editor了。需要注意的是，在每次打开Unity Hub的时候都需要使用脚本启动或者代理工具开启TUN Mode功能，否则登录仍然有跳转国区的可能。&lt;br&gt;
+希望你能够享受相对纯粹开发过程并减少外界干扰~&lt;/p&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://www.logiconsole.com/fuck-unity-cn/&#34;&gt;如何逃离Unity中国特供版&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://zhuanlan.zhihu.com/p/148669073&#34;&gt;如何下载原版Unity&lt;/a&gt;&lt;/p&gt;
+">Unity国际版下载使用指北</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://echosorari.github.io/post/lei-yin-he-zhan-shi-e-mo-cheng-metroidvaniayou-xi-jian-xi/"" data-c="
+          &lt;p&gt;类银河战士恶魔城类（Metroidvania）游戏作为一类小众游戏，一直具有着经久不衰的魅力。由于笔者最近同样通关过几款本品类的游戏，遂撰写本文，本文旨在对类银河战士恶魔城类游戏的特点与受众进行浅明简要分析，仅供参考。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;核心玩法循环&#34;&gt;核心玩法循环&lt;/h2&gt;
+&lt;p&gt;游戏的定义以及核心玩法决定了品类的核心玩法循环。维基百科对类银河战士恶魔城类游戏的定义如下：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;银河恶魔城游戏中通常有可供玩家探索的大型相连世界地图，但是进入地图某处的特定地点往往会有门或其他障碍物限制玩家，只有当玩家在游戏中获得特殊道具、工具、武器或能力后才能通过。这些新的提升还能帮助玩家击败更高难度的敌人并找到捷径和秘密区域，包括经常回顾已经探索过的地图区域。银河恶魔城游戏通过这样的设计使故事和关卡设计整合得更紧密，以精心设计的关卡和角色控制来鼓励玩家探索和实验，使之更投入自己的角色。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;定义强调了一种机制，即&lt;strong&gt;锁（LOCK）-钥匙（KEY）&lt;strong&gt;机制。而在后续的分析中，我们也同样会发现，本机制是构成整个类银河战士恶魔城游戏的整体。&lt;br&gt;
+以《Ender Lilies:Knights Quietus of Knights》为例，简要列出其核心玩法循环，不难发现游戏的主题游玩流程是探索地图-&amp;gt;打败BOSS-&amp;gt;获得钥匙-&amp;gt;探索地图，因此我们可以画出它的核心玩法循环。&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718618700319.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+可以看出，类银河战士恶魔城类游戏的核心驱动为&lt;/strong&gt;探索&lt;/strong&gt;。&lt;/p&gt;
+&lt;h2 id=&#34;核心特点&#34;&gt;核心特点&lt;/h2&gt;
+&lt;p&gt;五十岚孝司曾谈到他认为该类型游戏具备的关键要素。其中包含设计一个地图&lt;strong&gt;鼓励自由探索&lt;/strong&gt;，但仍会适时引导玩家进行主线流程，也会提供一些手段让玩家意识到自己身在何处。&lt;br&gt;
+概括来说，类银河战士恶魔城游戏是建立了一个以**探索（Explore）**为目的核心的，**地图（Map）、角色（Character）、锁机制（Lock）**相互关联组成完整系统，彼此之间的正反馈循环增强了游戏的探索性。其各个元素之间关系如下：&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718618715583.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+接下来笔者便以三个元素为基础分析其设计。&lt;/p&gt;
+&lt;h3 id=&#34;玩法设计&#34;&gt;玩法设计&lt;/h3&gt;
+&lt;p&gt;玩法上，存在&lt;strong&gt;锁（LOCK）机制&lt;/strong&gt;。&lt;br&gt;
+锁机制是整个类银河战士恶魔城游戏中的核心机制。所谓锁机制，即通过对地图/技能“上锁”的形式，对玩家的探索路线进行一定的限制。这种限制使得关卡设计者可以在保证地图具有相对较高自由的探索性的情况下，为游戏提供完整的流程叙事（除碎片化叙事之外）和地图重复探索体验。如《Ender Lilies:Knights Quietus of Knights》会在游戏后期地牢中获得开锁技能，打开前期无法经过的地方；《Touhou Luna Nights》击败每个区域地图关底BOSS时会存在一个可以获得钥匙的房间，要是可以通往其他区域地图。&lt;br&gt;
+一般的类银河战士恶魔城游戏提供两种锁机制，分别为&lt;strong&gt;技能锁&lt;/strong&gt;与&lt;strong&gt;关卡锁&lt;/strong&gt;：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;锁机制&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;th&gt;缺点&lt;/th&gt;
+&lt;th&gt;关卡联系&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;关卡锁&lt;/td&gt;
+&lt;td&gt;提供解锁新地图区块所需的钥匙，一般由地图区块的BOSS掉落&lt;/td&gt;
+&lt;td&gt;获得方式相对简单，用途单一&lt;/td&gt;
+&lt;td&gt;解锁新地图区块&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;技能锁&lt;/td&gt;
+&lt;td&gt;提供探索新地图区块所必需的技能（二段跳、爬墙、冲刺、滑铲等），一般由地图区块的BOSS掉落&lt;/td&gt;
+&lt;td&gt;相对更为考验关卡策划的地图设计能力，容易出现质量较低的地图&lt;/td&gt;
+&lt;td&gt;通过技能操作解锁新地图区块或通过技能重复探索旧地图隐藏道具、剧情&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3 id=&#34;关卡设计&#34;&gt;关卡设计&lt;/h3&gt;
+&lt;p&gt;关卡设计上，地图设计为多个区块及其从属区块组成了一张&lt;strong&gt;相连的、非线性的大地图&lt;/strong&gt;，并且地图具有&lt;strong&gt;可重复探索的特性&lt;/strong&gt;；相连非线性的大地图以及区域地图区块分割设计使得&lt;strong&gt;至少有两条路线可以连接区域地图区块&lt;/strong&gt;。&lt;br&gt;
+类银河战士恶魔城类游戏小地图设计模式一般分为两种，分别是以空洞骑士为代表地形连接地图与传统的块状连接地图，两种小地图设计形式各有千秋。两种类型的区别如下表：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;地图设计形式&lt;/th&gt;
+&lt;th&gt;代表作品&lt;/th&gt;
+&lt;th&gt;优点&lt;/th&gt;
+&lt;th&gt;缺点&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;地形链接图&lt;/td&gt;
+&lt;td&gt;《Hollow Knight》&lt;/td&gt;
+&lt;td&gt;可以将区块地图设计的相对复杂，提供了更多的探索乐趣&lt;/td&gt;
+&lt;td&gt;对地图设计师的要求极高，很容易弄巧成拙&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;块状连接图&lt;/td&gt;
+&lt;td&gt;《Bloodstained：Ritual of the Night》&lt;/td&gt;
+&lt;td&gt;区块间连接位置明显，容易辨识和进行区块间的移动&lt;/td&gt;
+&lt;td&gt;区块地图设计容易简单化，减小地图的探索性。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;下图分别为《Hollow Knight》与《东方月神夜》的地图设计，恰如其分的包含了笔者叙述的两种情况。&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718618725216.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+东方月神夜为代表的块状连接图：&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718618735985.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;角色设计&#34;&gt;角色设计&lt;/h3&gt;
+&lt;p&gt;在角色设计上，重复探索与锁机制所获得的物品会以某种形式正反馈至角色，并反馈于地图探索。&lt;br&gt;
+恶魔城的偏向使得类银河战士恶魔城游戏的角色&lt;strong&gt;具有一定的成长性质&lt;/strong&gt;。在地图探索的过程中，玩家可以在隐藏区域寻找到道具物品、金钱、技能等对角色提升、地图探索有一定帮助的物品。部分具有等级提升成长元素。&lt;/p&gt;
+&lt;h2 id=&#34;用户特征&#34;&gt;用户特征&lt;/h2&gt;
+&lt;p&gt;从性格上，类银河战士恶魔城类游戏更适合具有强烈探索精神的玩家，能够应对复杂但是具有自由解法的挑战。&lt;br&gt;
+从游戏诉求角度，类银河战士恶魔城游戏玩家对游戏具有“趣味性”“创新性”“探索性”的执着，对游戏画质诉求相对较低。&lt;br&gt;
+从消费习惯的角度，此品类游戏玩家具有长期并稳定的游戏消费习惯，同时游戏依赖性以及黏度高。&lt;/p&gt;
+&lt;h3 id=&#34;日活玩家数据表分析&#34;&gt;日活玩家数据表分析&lt;/h3&gt;
+&lt;p&gt;通过SteamDB本身的比较功能，比较几款相对代表性的该品类游戏的历史日活玩家数据表：&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718618741697.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+以年份为维度进行分析，日活玩家数量相对稳定且具有增加趋势，不存在数据断层现象。说明此游戏品类的玩家具有相对较高的的用户黏度。&lt;br&gt;
+为了使数据具有普适性，笔者从SteamDB中通过“Metroidvania”关键词对游戏进行筛选，选取日活玩家最多的《Hollow Knight》作为类银河战士恶魔城类游戏的代表进行用户分析：&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718618746173.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+使用Web Scraper工具选取豆瓣中对《Hollow Knight》的短评进行爬取获得数据集，其中包含用户昵称、游玩设备以及短评，获得数据共5464条。&lt;/p&gt;
+&lt;h3 id=&#34;用户游玩设备分析&#34;&gt;用户游玩设备分析&lt;/h3&gt;
+&lt;p&gt;清洗无关数据，使用新数据集对游玩设备进行数据分析，各游玩设备占比如下:&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718618751215.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+根据饼图可以看出，游玩类银河战士恶魔城游戏的玩家大多为端游玩家以及Switch玩家，同时具有少数的主机玩家。&lt;br&gt;
+PC玩家相对来讲具有丰富的游戏经验（尤其是小众游戏类型），对于游戏（尤其是独立游戏）付费具有高用户黏度和稳定性。Switch玩家多与便携、游戏创新性挂钩，由于Switch设备高昂售价以及相对中庸的性能，Switch玩家同样具有稳定甚至高于PC玩家游戏付费的稳定性以及对游戏创新性与趣味性的诉求。&lt;/p&gt;
+&lt;h3 id=&#34;玩家画像分析&#34;&gt;玩家画像分析&lt;/h3&gt;
+&lt;p&gt;数据集中的短评进行数据清洗，清洗掉副词、量词等数据，同时去除与游戏内容关联较强的数据（如游戏中的地名、角色名），保留相对有品类概括性的数据进行词频分析，将词频数据制作成词云（玩家画像）如下：&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718618755850.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+通过词云明显的看出玩家对类银河战士恶魔城游戏相关的游戏诉求：设计、画风、故事（剧情）、配乐、氛围、地图、类魂。&lt;/p&gt;
+&lt;h3 id=&#34;游戏自身特征分析&#34;&gt;游戏自身特征分析&lt;/h3&gt;
+&lt;p&gt;类银河战士恶魔城游戏的关键词是**“探索”&lt;strong&gt;，一切设计皆是围绕探索展开。对此品类游戏感兴趣的玩家，本身&lt;/strong&gt;具有高度的探索欲和耐心**，部分游戏会加入类魂元素，更为考验玩家对挑战的态度。&lt;/p&gt;
+&lt;h2 id=&#34;参考&#34;&gt;参考&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://tendcode.com/tool/word-cloud/&#34;&gt;在线词云生成器&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.zhihu.com/question/295152089&#34;&gt;游戏类型Metroidvania（类恶魔城银河战士）是什么意思-锁机制&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://zh.wikipedia.org/wiki/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%E6%B8%B8%E6%88%8F&#34;&gt;类银河战士恶魔城游戏-维基百科&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://steamdb.info/charts/?compare=283640,367520,400910,588650,692850,774361,851100,1057090,1306630,1369630&#34;&gt;几款类银河战士恶魔城游戏的品类用户增长数据比较&lt;/a&gt;&lt;br&gt;
+&lt;a href=&#34;https://www.lzltool.cn/word-frequency&#34;&gt;词频分析工具&lt;/a&gt;&lt;/p&gt;
+">类银河战士恶魔城（Metroidvania）游戏简析</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://echosorari.github.io/post/geng-huan-she-bei-hou-hexo-blog-bei-fen-yu-hui-fu/"" data-c="
+          &lt;p&gt;使用Hexo很长一段时间了，但是每次一时兴起更换设备操作系统后总会突然想起自己的博客数据没有进行备份，只能凭借记忆狠狠的回忆当时的文章内容。最近恰好有时间，痛定思痛直接研究研究数据备份和迁移的事情，来保证博客内容尽可能的不丢失。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;准备工作&#34;&gt;准备工作&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Git（已配置）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Node.js环境&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Github账号&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;如果不了解GIt的基本配置过程（Git基本指令、Git config配置、ssh key远程连接配置）可以自行百度，本文不再赘述。&lt;/p&gt;
+&lt;h2 id=&#34;数据备份&#34;&gt;数据备份&lt;/h2&gt;
+&lt;p&gt;数据备份有多种办法，可以网盘/U盘等等，但是每次写完文章都要再打开网盘/掏出U盘再拷贝一次相对非常繁琐，本文采用的是于Github建立仓库进行备份的方式，将必要数据push到仓库，通过命令push以及clone都会相对简便较多。&lt;/p&gt;
+&lt;h3 id=&#34;建立仓库并进行远程连接&#34;&gt;建立仓库并进行远程连接&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;在Github中新建Repository，命名为BlogArchive。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;打开本地博客文件夹（此处以”F:\Blog“为例）初始化并远程连接Git仓库。指令如下：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ cd F:\Blog
+$ git init
+$ git remote add origin https://github.com/your_github_name/BlogArchive.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;配置gitignore并push重要文件&#34;&gt;配置.gitignore并Push重要文件&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;新建.gitignore文件并添加非必要文件，方便上传重要文件。以下是我的.gitignore配置目录，仅供参考（如果感兴趣可以自行百度gitignore配置方法）。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;同时此处也提供重要文件夹的目录，如果您选择其他方式备份，也可以提供参考：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;scaffolds/  
+source /    
+themes/     
+_config.yml 
+package.json  
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;将重要数据备份并push到远程仓库进行备份。指令如下：&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;# 远程仓库为空时的指令参考
+$ git push -u origin master
+# 远程仓库非空时的指令参考
+$ git push origin master
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;至此，数据备份完成。&lt;strong&gt;为方便随时备份数据，更换设备后的Blog文件夹也同样建议远程连接备份数据库，每次更新完后进行如下操作随时进行备份。&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;$ git add .
+$ git commit -m &amp;quot;update content&amp;quot;
+$ git push
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;数据恢复&#34;&gt;数据恢复&lt;/h2&gt;
+&lt;h3 id=&#34;本地hexo安装与恢复&#34;&gt;本地hexo安装与恢复&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;新设备创建Blog目录，用于存放文件&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;安装hexo以及必要模块，clone备份文件到本地&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;$ cd Blog
+$ npm install -g hexo-cli
+$ git clone https://github.com/your_github_name/BlogArchive.git Blog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id=&#34;hexo相关功能恢复&#34;&gt;hexo相关功能恢复&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;安装文章部署远程插件及其他插件&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;文章部署远程插件是必要的，它可以将你的文章部署到Github page。&lt;/p&gt;
+&lt;p&gt;同时找到所使用的主题的官方文档，查看功能实现所需要的插件，这里以cactus主题的搜索功能为例，参考命令如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# 文章远程部署插件
+$ npm install hexo-deployer-git --save
+# 安装其他插件
+$ npm install npm install hexo-generator-search --save
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ol&gt;
+&lt;li&gt;本地测试运行并远程部署&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre&gt;&lt;code&gt;# 本地测试
+$ hexo server
+$ hexo s
+# 将数据部署到云端
+$ hexo clean
+$ hexo g
+$ hexo d
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;至此，新的博客本地部署完成，可以继续愉快的写博客啦！&lt;/p&gt;
+">更换设备后Hexo Blog备份与恢复</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://echosorari.github.io/post/2022-shu-dan-pian-dan/"" data-c="
+          &lt;p&gt;2022年即将结束，在此列出这一年内看过的书籍、番剧、电影。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;No&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Name&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Author&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Tag&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;State&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;原则&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;达里欧&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;实用性工具&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;银河铁道之夜&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;宫泽贤治&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;程序员修炼之道：从小工到专家&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;戴维·托马斯etc.&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;浮士德&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;歌德&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;吉卜力的风&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;铃木敏夫&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;杂谈笔记&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;游戏设计梦工厂&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Tracy Fullerton&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;游戏设计&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;知晓天空之蓝的人啊&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;长井龙雪（CloverWorks）&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;普罗米亚&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;今石洋之（扳机社）&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;银河铁道之夜&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;宫泽贤治&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;10&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;你的名字。&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;新海诚&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;11&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;奔跑吧！梅洛斯&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;森见登美彦&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;12&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;游戏开发者访谈录&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;小野宪史&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;13&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;通关！游戏之道&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;Scott Rogers&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;游戏设计&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;14&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;若能与你共乘海浪之上&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;汤浅政明&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;15&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;泡泡&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;荒木哲郎&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;16&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;赛博朋克：边缘行者&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;扳机社&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;17&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;比海更深&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;是枝裕和&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;18&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;SSSS.古立特&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;扳机社（TRIGGER）&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+">2022书单/片单</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://echosorari.github.io/post/game-for-good-gamejam-2022-review/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;你这什么比赛啊72小时怎么一直有人在群里报进度，太卷了太卷了，下次不来了.jpg&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;!-- more --&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://echosorari.github.io/post-images/1718619654061.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;首先感谢本次比赛虽然是线上路人局，但是遇到许多有意思的人，无论是我们队伍的策划选手毛球；程序选手左轮、西洲、流星画魂；美术沐叽、神龙；还是推荐我打一打本次比赛的负责人Steven，虽然只是打杂选手但是还是收获颇多。&lt;/p&gt;
+&lt;p&gt;不过就算比赛没有完全做完，赛前玩《你画我猜》的时候大家也是挺欢乐的hhh&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;2&#34;&gt;&lt;img src=&#34;https://echosorari.github.io/post-images/1718619666507.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;本次“益游未尽”Game Jam是72小时的开发，和大部分正常的48h Game Jam从时间安排上还有一些区别的。在面试志愿者的时候Steven推荐没有打过此类比赛的我来尝试一下接触Game Jam赛事。不过说赛事其实有些不合适啦，毕竟GJ本身就是一起玩的party。&lt;/p&gt;
+&lt;p&gt;初次参加比赛，72小时“致郁”了我的精神内耗www。&lt;/p&gt;
+&lt;p&gt;作为打杂人员兼PM，很惭愧Unity/C#技术以及2D pixel技术都不太到家没能帮上什么忙（除了进行了一个长时间的监工），熬了60+小时熬秃头了熬秃头了。不过作为初次参加GameJam的选手，还是有很多共性问题值得review的。&lt;s&gt;人真的就是了解过相关内容了还是会重蹈覆辙（指指点点）&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;赛前确定各个组员本次使用的工具&lt;/strong&gt;还是很重要的，本来我以为需要进行处理的只有程序所用引擎以及版本的统一、以及确定项目管理工具就可以了，后来问题就很大了，可以说很多是没有统筹好的结果（也可以说过于自信以为之前初次参加比赛的人写到关于这一方面失误的文章自己不会犯错，看来初次参加的选手或多或少都会重蹈覆辙的别骂了别骂了）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;个人职业能力需要过硬&lt;/strong&gt;。这里的职业能力不是指行业内能力，而是“至少能够完成自己的任务”。比赛很容易遇到许多萌新选手，倒也不是说萌新没有参赛的资格，毕竟我也是萌新233。在比赛的时候，会遇到许多悬而未决的问题，但是在范围内的至少需要程序懂得搭场景，美术懂得帧动画、骨骼动画相关内容。&lt;s&gt;当然不懂也没关系，比赛前可以进行一个速成&lt;/s&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;完成度与体量的抉择&lt;/strong&gt;。对于项目一定是完成度优先。无论是前期规划还是后期削砍，在后期联系的时候许多选手吐槽自己做不完了、高估了三天的体量削减了一大半等等。~~这就涉及到迭代设计理论了。~~及时制作出原型，保证游戏本身最简化的表达能够达到后，再通过不断的产品迭代进行完善和加强。许多提交的作品相对来说都是半成品（比如我们组），其实是完全没有办法得到完整的体验的，最后的成绩自然也不会特别好看。所以&lt;strong&gt;优先保证自己作品的完成度&lt;/strong&gt;是很重要的。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;3&#34;&gt;&lt;img src=&#34;https://echosorari.github.io/post-images/1718619677809.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;程序版本迭代与美术素材管理&lt;/strong&gt;。原本我们采用的是git进行分布式管理，使两者在不同的分支进行。但是没有想到部分程序对git并不是十分熟悉（美术则是完全不熟悉，没有办法把资源托管到远程）。后续的解决方式对于git操作这一块我们采用了SourceTree这一工具GUI化git 操作，相对来说操作更为简便；对于素材管理，本身使用的是QQ群群文件进行统一管理，但是后期发现了群文件无法满足“文件夹内创建文件夹”这一需求。后续的处理方法是使用腾讯微云的共享组进行文件共享，虽然效果也一般但是学习时间成本相对还是较低的。而进度管理采用的则是可以共享编辑的Excel表格，效果还算可以。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;4&#34;&gt;&lt;img src=&#34;https://echosorari.github.io/post-images/1718619684606.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;strong&gt;工期与队友情绪管理&lt;/strong&gt;。之前都是线下所以不存在跑路的问题，线上比赛还是路人局队友跑路可太习以为常了。在打比赛顺便帮忙进行队伍对接的时间里，遇到许多队长询问我“比赛打到一半程序/美术跑路了怎么办”。这……你就算这样问我……许多队伍中期队友跑路自己solo到最后，不过是在线组的路人局嘛。完全可以理解，或者说这种情况算是可预估范围内的变数。&lt;/p&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;5&#34;&gt;&lt;img src=&#34;https://echosorari.github.io/post-images/1718619688937.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;虽然比赛像是脱了一层皮一样，但是还是很快乐的！线上的Game Jam虽然没有线下相聚如此快乐，但是相对降低了门槛，毕竟不是所有人都有能力买机票去上海hhhh。总之，还是那句话，玩的开心！&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;还有一件事，我们队伍8人平均年龄20岁，下至高二学生上至22届大学毕业生，只有我是母胎SOLO至今。&lt;/strong&gt;&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718619757822.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+很好，现在有比我更年长的母胎SOLO选手出现了（苦笑）。&lt;/p&gt;
+">Game For Good GameJam 2022 review</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://echosorari.github.io/post/gao-ban-ben-hao-android-studio-dong-tai-diao-shi-smali-wen-ti-jie-jue/"" data-c="
+          &lt;p&gt;在学习安卓逆向配置环境时，遇到了Android Studio无法动态调试smali代码的情况，本文旨在解决这一问题。&lt;strong&gt;（请注意，文章具有时效性，本文撰写于2021年末，随着版本的升级本文所提供的方法可能不再适用，请注意甄别。）&lt;/strong&gt;&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;android-studio版本过高无法使用插件smalidea&#34;&gt;Android studio版本过高无法使用插件smalidea&lt;/h2&gt;
+&lt;p&gt;以下是我的版本信息。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Android Studio Arctic Fox | 2020.3.1 Patch 3
+Build #AI-203.7717.56.2031.7784292, built on October 1, 2021
+Runtime version: 11.0.10+0-b96-7249189 amd64
+VM: OpenJDK 64-Bit Server VM by Oracle Corporation
+Windows 10 10.0
+GC: G1 Young Generation, G1 Old Generation
+Memory: 1280M
+Cores: 12
+Registry: external.system.auto.import.disabled=true
+Non-Bundled Plugins: org.jf.smalidea
+&lt;/code&gt;&lt;/pre&gt;
+&lt;figure data-type=&#34;image&#34; tabindex=&#34;1&#34;&gt;&lt;img src=&#34;https://echosorari.github.io/post-images/1718619434740.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/figure&gt;
+&lt;p&gt;通过百度极大部分百度到的通过Android studio配置动态调试smaliea时，推荐smalidea的版本都在0.03-0.05之间。需要注意的是，目前本版本（或者更高版本）的Android studio（截至2021/12/14）对旧版本的smalidea已经不再适配，安装之后会进行报错：&lt;br&gt;
+&lt;code&gt;Plugin error: Plugin  is compatible with IntelliJ IDEA only because it doesn&#39;t define any explicit module dependencies&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;删除不断报错的低版本插件&#34;&gt;删除不断报错的低版本插件&lt;/h3&gt;
+&lt;p&gt;先解决删除旧插件问题。新版本Android studio在导入smalidea并restart IDE后，会不断进行上述报错。在plugins中也无法找到薛定谔的smalidea插件包。这个时候可以打开我的电脑，按照如下路径：&lt;br&gt;
+&lt;code&gt;C:\Users\你的用户名\AppData\Roaming\Google\AndroidStudio2020.3\plugins&lt;/code&gt;&lt;br&gt;
+这里我的是AndroidStudio2020.3，你的可能不太一样，自己进行修改即可。最终是打开它的“plugins”文件夹，找到“smalidea”这个文件夹，整个删除之后重启IDE即可。&lt;/p&gt;
+&lt;h3 id=&#34;安装适配新版本的smalidea插件&#34;&gt;安装适配新版本的smalidea插件&lt;/h3&gt;
+&lt;p&gt;IDE自带Smali Support进行Smali解析，但是Smali Support不支持Smali断点调试。故我们使用Smaliidea，本版本的Android studio需要用smalidea-0.06插件。可以完美解决报错问题。&lt;br&gt;
+最新的smalidea0.06&lt;a href=&#34;https://bitbucket.org/JesusFreke/smalidea/downloads/&#34;&gt;点击这里&lt;/a&gt;获取。如果链接炸了，请Github搜索smalidea寻找高版本smalidea解决。&lt;br&gt;
+之后通过一波离线插件的导入（File -&amp;gt; Settting -&amp;gt; Plugins -&amp;gt;小齿轮 -&amp;gt; Install Plugins from Disk，点击本地磁盘下载的安装包），然后进行一个IDE的重启，即可使得smalidea插件生效。&lt;br&gt;
+之后我们修改配置，使smalidea对*.smali文件进行断点调试。这一步由于IDE版本不同，文件显示也有一定差别。但是大题都是一样的。所以按照如下格式进行修改也没有什么大问题。&lt;br&gt;
+首先，点击File -&amp;gt; Settting -&amp;gt;Editor -&amp;gt; File Types找到两个Smali文件：&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718619442359.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+找到“File name patterns”里含有*.smali的文件（我这里是smali Files，你的可能两个都是smali），点击&amp;quot;-&amp;quot;进行删除。&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718619445939.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+在另一个samali的“File name patterns”中，点击“+”，输入*.smali并点击OK，至此，smalidea断点调试smali的配置已经基本完成。&lt;/p&gt;
+&lt;h2 id=&#34;android-studio动态调试smali&#34;&gt;Android studio动态调试smali&lt;/h2&gt;
+&lt;p&gt;Android Studio中自带虚拟机，从Tools-&amp;gt;AVD manager中创建新的虚拟机即可。具体过程自行百度。&lt;s&gt;千万别用VMware创建Android，不仅响应超级慢没法联网还没法安装VM-Tools从传输文件&lt;/s&gt;&lt;br&gt;
+（这里极度建议用自带的虚拟机，还节省了root和connect的步骤）&lt;br&gt;
+这里蜀黍我插句嘴，android studio这个时候你一定配置好adb_path了对吧，一定配置好了对吧，一定配置好了对吧！没有赶快百度去配置！&lt;a href=&#34;https://blog.csdn.net/wenjun_xiao/article/details/107198615&#34;&gt;配置错误处理&lt;/a&gt;&lt;br&gt;
+导入需要调试的apk，依次点击 File -&amp;gt; Profile or Debug Apk，打开文件（速度又亿点慢，请耐心等待）&lt;br&gt;
+修改apk的Manifest application 属性&lt;br&gt;
+&lt;code&gt;android:debuggable=“true”&lt;/code&gt;&lt;br&gt;
+可以用apktool解出Manifest 然后修改，接着重新打包回去。这里我使用andriodkiller修改签名打包一步到位。之后将app安装到手机。&lt;br&gt;
+选择Developer options-&amp;gt;Select debug app，选中等待调试的软件，之后打开“Wait for debugger”的开关。我用的是Nexus5的系统，你用别的系统应该也是大差不差。点开后如下图所示。&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718619457587.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+返回需要调试的应用，打开。应该会显示“Wait for debugger”。这个时候，点开Android studio的调试按钮（一个长得像瓢虫的东西），弹出如下弹窗。&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718619463907.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+选择需要Debug的进程，点击OK。点击IDE的run按钮。这个时候估计就可以进行愉快的调试了。&lt;s&gt;（图中的歌词麻烦无视一下，才不是什么歌曲推荐）&lt;/s&gt;&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718619468652.png&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+这个结果，我看彳亍。&lt;/p&gt;
+">高版本号Android Studio动态调试smali问题解决</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://echosorari.github.io/post/2021-shu-dan-pian-dan/"" data-c="
+          &lt;p&gt;2021年即将结束，在此记录2021年所看过的书籍、番剧、电影。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;No&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Name&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Author&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Tag&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;State&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;1&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;太阳与少女&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;森见登美彦&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;2&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;将死未死之青&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;乙一&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;3&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;你好，世界&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;野崎惑&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;电影&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;4&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;第三十街的两匹斑马&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;马尔·米歇尔·阿玛德利&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;5&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;心&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;夏目漱石&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;6&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;猫之墓&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;夏目漱石&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;7&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;地狱变&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;芥川龙之介&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;8&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;365日。&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;渡边有子&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;9&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;正见&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;宗萨蒋扬钦哲仁波切&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;佛学、哲学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;10&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;夜行&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;森见登美彦&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;11&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;怪盗二十面相&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;江户川乱步&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;12&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;恶之花&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;波德莱尔&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;诗歌&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;13&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;致愤青&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;克里斯托弗·喜钦斯&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;14&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;草枕&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;夏目漱石&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;15&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;樱&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;西行奈子&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;外国文学&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;√&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+">2021书单/片单</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://echosorari.github.io/post/kan-xing-xing/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;星汉灿烂，若出其里。 ——曹操《观沧海》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;老实说，这篇文章是咕了很久很久的一篇文章了，但是由于懒，一直没来得及好好撰写。今天恰好因为ACM比赛把实验室占用了，一觉醒来正好空出来时间写。&lt;br&gt;
+对于星星，我一直抱着一种好奇。天空是星星的承载体，星星是天空的点缀物。几万光年前的光芒，这样小小的挂在夜空。&lt;/p&gt;
+&lt;!-- more --&gt;
+&lt;h2 id=&#34;星星和天台&#34;&gt;星星，和天台&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;这孩子打小就喜欢坐在天台上看星星。——我妈&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;实际上，看星星作为我对一种平凡生活中特殊的仪式，在我很小的时候就存在了。&lt;br&gt;
+小时候住的地方都是平房，房顶一般都拿来晒被子晒粮食啥的，到了黄昏的时候固定在天台的烟囱炊烟袅袅，实际上靠近过的都知道，炊烟只是想象起来画面唯美，其实被烟喷到能抹人一脸炭灰。平方顶上是不能进行一些剧烈的运动的，主要是害怕运动的时候碰到太阳能的暖水管，这种管子可以说是很脆弱，导致上平方顶，只能做些比较安静的事情。&lt;br&gt;
+所以打小就喜欢爬到平房顶看星星。&lt;br&gt;
+随着上学搬到县区住之后，都是尖尖的房顶，没有天台。刚刚开始的生活也是很艰难。自行车被偷过，我养的那条狗也因为疾病死去了。如今我还是能记得我妈带着我将他扔掉的情形。&lt;br&gt;
+高中的时候，不知道为啥教室分到了五楼，楼换了一座又一座，巨大的报告厅拔地而起，但是我教室的高度三年从未变过，校长说是锻炼身体，防止因为长时间学习导致体能跟不上。&lt;br&gt;
+我想起了安静的考场上突然头晕倒地的那个高三的学姐。&lt;br&gt;
+那声声响似乎一直在我的耳边回响，久久不散。&lt;br&gt;
+高三新上任的校长真是装糊涂的高手。&lt;br&gt;
+因为疫情，学校封校，要求全体高三学生提前返校封闭式管理。我们挤着住在六人间，每天晚上都有班主任来探班，那个时候还没有内卷这个词，但是班主任总会表扬晚上回宿舍学习至深夜的。我没有那种毅力，回去倒头就睡。由于要宽松管理，一个班的人分在两个大教室上课，又是五楼。如果以教学楼共六层楼为前提，五楼似乎不是那么可悲。&lt;br&gt;
+可是这栋教学楼最高就五层楼。&lt;br&gt;
+这段时间最喜欢的一件事情就是在晚自习的课间，倚靠在窗台边，唱《零重祈愿》，唱《牧星者》。陪伴着我的只有我的MP3，里面存了许多VOCALOID的歌曲，不乏有许多关于夜晚、星空的歌曲。因为大家都在为着双一流高校冲刺着，无暇看星星。所以这个时间段，非常适合像我这种“悲情歌者”。高中的时候不能带手机，所有的外界消息都是通过老师传达的。所以就算让我夜观天象，我也计算不出何时天晴，可以更清楚的看星星。&lt;br&gt;
+但是那段时间，我靠着一张星象图认出了所有的夏日星座，如今的我还是为当时的记忆力感到感叹。现在的我只能吃两大碗米饭。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;数星星的孩子是在和夜晚的星空交谈，而不是为了得到一个数字。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;上了大学之后，我觉得，星星还是要看的。然而大学几乎每个地方都是灯火通明，灯火熄灭的时候看门大👴就下场去各个教室赶人了。很显然，如果我不想半夜被锁在冰冷的教学楼里睡觉，那就应该找一个伸手不见五指并且没有封锁限制的地方看星星。&lt;br&gt;
+找地方看星星这么有仪式感的事情，就更要挑选个良辰吉日。我说的，不接受任何反驳。&lt;br&gt;
+在生日那一天，决定任性一些，满校园骑车转转。作为一个学生作风优良到EDG夺冠也没有啥过激行为的学校，干净利落的把最高层的所有的门窗都给焊死了。学校喜提一堆没用的装饰天台。可能是为了学生的安全考虑吧。看着尘封的天台，总不免有些落寞。它并没有作为它原有的功能活着，而是被遗忘。对了，高层也很少有人上自习的。&lt;br&gt;
+但是最终还是被我逮到J1七楼的天台，令人惊讶的是，这里居然是开着门的，甚至还养了盆栽。虽然说J1高层是考研复习重地，但是这不妨碍我上楼看风景。七楼的防火门略微有些沉重，腐朽的门锁发出吱吱声。一边是储物间，但是看起来已经废弃了，另一边是通往天台的小门。生活的惊喜就是那么突然，虽然这之前我已经找了四五栋教学楼了。&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718618917132.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+个人对天台还是有很多情感的。可能是因为看动漫看多了，总会把天台和青涩、恋爱、橘子水、夏天联系在一起。这是我在大学发现的第一个天台。&lt;br&gt;
+后来发条柚👴告诉我其实南门最高的那个行政楼顶层也有一个天台。因为发条柚👴是拉拉人，谈到天台比我还兴奋，给我说可以练舞出道成为校园偶像。我调侃发条柚👴马上给他准备皮套出道成为CTF偶像。今天晚上本是打算一探究竟的，结果发现电梯最高只能爬到11层，从漆黑的窗户上探头一看，上面还有三层，从侧门走楼梯没有灯光太黑了，什么叫望而止步啊。我说，这绝对不是因为害怕啥的，绝对不是。&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718618923894.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;看星星&#34;&gt;看星星&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;J1天台已加入星旅豪华套餐&lt;/strong&gt;&lt;br&gt;
+在天台拍的照片不经意间被吴同学看到了，独属于我的秘密之地也就此暴露了。&lt;br&gt;
+那也就没必要藏着掖着了，于是发了一条说说，但是凭借我对自己的深刻理解，肯定有很多人不会好好看文章，~~看了也大多都是没有任何艺术细胞的工科生（这条删掉）~~所以并不是很担心这个地方因为成为一个著名打卡景点而被学校锁上。&lt;br&gt;
+吴同学也是一起玩的老熟人了。很巧的是，吴同学虽然与我不是同一学院的人，但是因为定向越野体育课而相识。又因为玩心都比较重，所以我们俩实际上交情还是很好的。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;吴：晚上去笔架山山顶看星星&lt;br&gt;
+我：嘤嘤嘤今天晚上有课&lt;br&gt;
+吴：周六呀&lt;br&gt;
+我：带俺一个&lt;br&gt;
+吴：女子&lt;br&gt;
+我：彳亍&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;其实我在约定之前，已经去过一次笔架山了。哦，对了。笔架山经过考虑被划分进了家属区，今年建校周年庆顺便在山顶修了一名叫“重檐六角乾惕亭”的小亭子。家属区是人脸识别的，擅自闯入的话，各个居民楼上的大喇叭就会响起”警报，警报，非法闯入“的警报。当然如果你脸皮足够厚那肯定没啥问题，不过对于我来说那肯定相当于一次大型的社死了。&lt;br&gt;
+然而当时正值酷暑，学校一边以线路老化为理由拒绝给宿舍安装空调，一边在家属区修了这么个亭子。被同学们嘲讽”学校真是亲民呢“。&lt;s&gt;BTW，学校为了迎接高贵的新生把GB12宿舍全部换为了上床下桌，可怜住在GB1的我还住着年岁比我都大的床板。&lt;/s&gt;&lt;br&gt;
+总之在某一次漫无目的的散步的时候，散到家属区门口了。然后一狠心，细声细语的问正好经过的老奶奶：&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我：老师您好，今日天气甚是晴朗，可否带鄙人一程。&lt;br&gt;
+老师：好（笑）&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;老奶奶快笑喷了，然后非常感兴趣的和我聊了一路。之后一个研究生导师带着他的小孩子和他妻子一起散步，也加入了聊天。~~然而是被当成研究生了，后来还解释了解释。不过老师们对我独自一人来爬山很感兴趣是真的。~~虽然中间有一些插曲，但是无伤大雅，跟随着一群研究生（和他们在电话中视频的指导老师）的脚步，终于到山脚。别过老师，我就独自上山了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;上山岗,上山岗&lt;br&gt;
+请听我,大声唱&lt;br&gt;
+唱太阳,唱月亮&lt;br&gt;
+唱时光,唱成长&lt;br&gt;
+不孤单,不孤单,因为我们都一样&lt;br&gt;
+愿这歌声,能让你坚强&lt;br&gt;
+——ilem《上山岗》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;所以，这是我第一次带别人一起爬山。独自爬山总有一种“一览众山小”的气魄，但是两个人爬山相互扶持更舒服一些。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我：你有带别的同学🐎&lt;br&gt;
+吴：除了咱俩还有谁神经病似的大晚上的爬山&lt;br&gt;
+我：雀食&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;天色渐暗，但仍是万里无云。心情大好，于是早到了半个多小时，独自与寒风中等待。没吃晚饭，草草的从自动售卖机买了一根士力架。事实证明，这玩意雀食跟人体提供了不少的热量，身体瞬间就暖和了。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“到了没”&lt;br&gt;
+“已达”&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然后吴同学就像看傻子一样看我在原地转圈圈找他。他甚至在我发现他之前和我一起转圈圈。&lt;br&gt;
+爱的魔力转圈圈是吧。抢过他手里的奶茶，后续没少一顿暴打。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;吴：咱怎么进家属区啊&lt;br&gt;
+我：静等一个有缘人&lt;br&gt;
+吴：那怎么出去&lt;br&gt;
+我：静等一个好心人&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;这个时候我感觉似乎已经看到吴同学流汗黄豆的表情了。但是出于信任，也没咋吐槽我。事实证明，在寻找有缘人这块被我拿捏的死死的。凭借着记忆，成功上山。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;吴：你上次来的时候……也这么黑？&lt;br&gt;
+我：希望今晚咱俩今晚能下去&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;走了很长的一段马路，灯光闪烁着，甚是好看。好不容易到山脚，有点意外的发现阶梯旁边的灯完全没有亮。不是没完全亮，是完全没有亮。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;我：你现在有两个选择，上山或者调头回去&lt;br&gt;
+吴：走，上山&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img src=&#34;https://echosorari.github.io/post-images/1718618934566.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+两个人一起摸黑向山顶进军。爬上去是爬上去了，因为是晚秋，嵙的妖风又是出了名的大。因为想着爬山所以没有披上羽绒服的我还是感觉到有些冷。但是兴致于此，不惧风寒。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;吴：这个地好适合练歌啊，可惜我已经退役了&lt;br&gt;
+我：你不想灌一肚子风明天变身为喷射战士就尽情的在这里练&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;然后吴同学还是唱了两首，清了清嗓子。没有空谷传响，歌声向晚，响彻小亭。在如此安静的夜里，下方闪烁的霓虹灯光和黑暗的山顶相映，到也是有趣。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;抬头星天灿烂，银色飘扬千千年的雪。——ilem《看星星》&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;比起上次，这次的情侣意料之外的少，只有一对还是因为太冷了一小会就下去了。后来上来了一个玩无人机的大佬，虽然很想搭话但是还是因为重度社恐没有鼓起勇气交谈。&lt;br&gt;
+下山途中，和吴同学聊了很多，再次感叹这个世界真是太奇怪了。&lt;br&gt;
+应该说不愧是他吗。&lt;/p&gt;
+&lt;p&gt;最后留几张图片。&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718618940333.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;br&gt;
+&lt;img src=&#34;https://echosorari.github.io/post-images/1718618945007.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34;&gt;&lt;/p&gt;
+">看星星</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://echosorari.github.io/post/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;莫愁前路无知己，天下谁人不识君。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关于本站&#34;&gt;🏠 关于本站&lt;/h2&gt;
+&lt;p&gt;🚉 本站是我（Grayi、日和、清和、Shigure、sorari、echosorari、MistRaven）的个人网站，似乎看起来很多ID但是常用的没有几个&lt;br&gt;
+💿 闲言碎语 / 随笔 / 笔记 / 各种总结 / 教程 / etc. 存档记录点&lt;br&gt;
+🤝🏻 如非特殊声明，本站文章遵从CC BY-SA 4.0进行的许可&lt;/p&gt;
+&lt;h2 id=&#34;博主是谁&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;
+&lt;p&gt;👻 一团有很多想法的混乱生物，对事物有点自己的理解但不多。&lt;br&gt;
+💻 Debian用户，同时因为各种原因也在使用Windows环境。&lt;br&gt;
+🎮 杂食游戏玩家，最喜欢的类型是Roguelike和Metroidvania，似乎并不是很擅长一个人玩恐怖游戏。&lt;br&gt;
+🔧 经常抽风性的去研究自己很好奇但是“对生活没有什么用”的东西，并且乐在其中。&lt;br&gt;
+☀️ 要么死的安然，要么生的璀璨。&lt;/p&gt;
+&lt;h2 id=&#34;联系方式&#34;&gt;📬 联系方式&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;E-mail：sorari@qq.com&lt;/li&gt;
+&lt;li&gt;Github：https://github.com/echosorari&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;交换友链&#34;&gt;🔗 交换友链&lt;/h2&gt;
+&lt;p&gt;如果你感兴趣，欢迎邮箱私信我互换友链！&lt;br&gt;
+提供的友链格式为：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[Name](Link) | describe
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;我的友链信息如下：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;name:清和/MistRaven（选一个都可以）
+link:echosorari.github.io
+describe:不怎么安分的赛博吟游诗人
+&lt;/code&gt;&lt;/pre&gt;
+">关于</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script>
+  // var escape = "[{&#34;content&#34;:&#34;&lt;p&gt;在《明朝的那些事儿》这本书结尾，当年明月还在文末及后记中加了一段意味深长的文字，今摘录部分，与各位共品。&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;p&gt;从俗世的角度，徐宏祖是个怪人，这人不考功名，不求做官，不成家立业，按很多人的说法，是毁了。&lt;br&gt;\n我知道，很多人还会说，这种生活荒谬，是不符合常规的，是不正常的，是缺根弦的，是精神有问题的。&lt;br&gt;\n我认为，说这些话的人，是吃饱了，撑的，人只活一辈子，如何生活，都是自己的事，自己这辈子浑浑噩噩地没活好，厚着脸皮还来指责别人，有多远，就去滚多远。&lt;br&gt;\n此前，我讲过很多东西，很多兴衰起落、很多王侯将相、很多无奈更替，很多风云变幻，但这件东西，我个人认为，是最重要的。&lt;br&gt;\n因为我要告诉你，所谓千秋霸业，万古流芳，以及一切的一切，只是粪土。先变成粪，再变成土。&lt;br&gt;\n现在你不明白，将来你会明白，将来不明白，就再等将来，如果一辈子都不明白，也行。&lt;br&gt;\n而最后讲述的这件东西，它超越上述的一切，至少在我看来。&lt;br&gt;\n但这件东西，我想了很久，也无法用准确的语言，或是词句来表达，用最欠揍的话说，是只可意会，不可言传。&lt;br&gt;\n然而我终究是不欠揍的，在遍阅群书，却无从开口之后，我终于从一本不起眼，且无甚价值的读物上，找到了这句适合的话。&lt;br&gt;\n这是一本台历，一本放在我面前，不知过了多久，却从未翻过，早已过期的台历。&lt;br&gt;\n我知道，是上天把这本台历放在了我的桌前，它看着几年来我每天的努力，始终的坚持，它静静地，耐心地等待着终结。&lt;br&gt;\n它等待着，在即将结束的那一天，我将翻开这本陪伴我始终，却始终未曾翻开的台历，在上面，有着最后的答案。&lt;br&gt;\n我翻开了它，在这本台历上，写着一句连名人是谁都没说明白的名人名言。&lt;br&gt;\n是的，这就是我想说的，这就是我想通过徐霞客所表达的，足以藐视所有王侯将相，最完美的结束语：&lt;br&gt;\n成功只有一个——按照自己的方式，去度过人生。&lt;br&gt;\n很多人问，为什么看历史，很多人回答，以史为鉴。&lt;br&gt;\n现在我来告诉你，以史为鉴，是不可能的。&lt;br&gt;\n因为我发现，其实历史没有变化，技术变了，衣服变了，饮食变了，这都是外壳，里面什么都没变化，还是几千年前那一套，转来转去，该犯的错误还是要犯，该杀的人还是要杀，岳飞会死，袁崇焕会死，再过一千年，还是会死。&lt;br&gt;\n所有发生的，是因为它有发生的理由，能超越历史的人，才叫以史为鉴，然而我们终究不能超越，因为我们自己的欲望和弱点。&lt;br&gt;\n所有的错误，我们都知道，然而终究改不掉。&lt;br&gt;\n能改的，叫做缺点，不能改的，叫做弱点。&lt;br&gt;\n顺便说下，能超越历史的人，还是有的，我们管这种人，叫做圣人。&lt;br&gt;\n以上的话，能看懂的，就看懂了，没看懂的，就当是说疯话。&lt;br&gt;\n最后，说说我自己的想法。&lt;br&gt;\n因为看得历史比较多，所以我这个人比较有历史感，当然，这是文明的说法，粗点讲，就是悲观。&lt;br&gt;\n这并非开玩笑，我本人虽然经常幽默幽默，但对很多事情都很悲观，因为我经常看历史（就好比很多人看电视剧一样），不同的是，我看到的那些古文中，只有悲剧结局，无一例外。&lt;br&gt;\n每一个人，他的飞黄腾达和他的没落，对他本人而言，是几十年，而对我而言，只有几页，前一页他很牛，后一页就怂了。&lt;br&gt;\n王朝也是如此。&lt;br&gt;\n真没意思，没意思透了。&lt;br&gt;\n但我坚持幽默，是因为我明白，无论这个世界有多绝望，你自己都要充满希望。&lt;br&gt;\n人生并非如某些人所说，很短暂，事实上，有时候，它很漫长，特别是对苦难中的人，漫长得想死。&lt;br&gt;\n但我坚持，无论有多绝望，无论有多悲哀，每天早上起来，都要对自己说，这个世界很好，很强大。&lt;br&gt;\n这句话，不是在满怀希望光明时说的，很绝望、很无助，很痛苦，很迷茫的时候，说这句话。&lt;br&gt;\n要坚信，你是一个勇敢的人。&lt;br&gt;\n因为你还活着，活着，就要继续前进。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;lesslessming-zhao-de-na-xie-shi-er-greatergreater-jie-yu&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;在《明朝的那些事儿》这本书结尾，当年明月还在文末及后记中加了一段意味深长的文字，今摘录部分，与各位共品。&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;《明朝的那些事儿》结语&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;随笔&#34;,&#34;slug&#34;:&#34;0URR1B28T&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/0URR1B28T/&#34;}],&#34;date&#34;:&#34;2024-06-23 22:05:14&#34;,&#34;dateFormat&#34;:&#34;2024-06-23&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://echosorari.github.io/post/lesslessming-zhao-de-na-xie-shi-er-greatergreater-jie-yu/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;5 min read&#34;,&#34;time&#34;:243000,&#34;words&#34;:1219,&#34;minutes&#34;:5},&#34;description&#34;:&#34;在《明朝的那些事儿》这本书结尾，当年明月还在文末及后记中加了一段意味深长的文字，今摘录部分，与各位共品。\n\n从俗世的角度，徐宏祖是个怪人，这人不考功名，不求做官，不成家立业，按很多人的说法，是毁了。\n我知道，很多人还会说，这种生活荒谬，是不...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;毕业，是一场兵荒马乱。&lt;br&gt;\n盛夏无止尽的蝉鸣中，一顿不算完美的散伙饭，一张青涩的毕业照，一场拒绝伤感的KTV，一次夜爬笔架山。补全在学校最后一块拼图，挥手离去。大学篇，堂堂完结。&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;h2 id=\&#34;畢業\&#34;&gt;畢業&lt;/h2&gt;\n&lt;blockquote&gt;\n&lt;p&gt;时光一逝永不回&lt;br&gt;\n往事只能回味&lt;br&gt;\n——韩宝仪《往事只能回味》&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;毕业前要求每个人交一张生活照，翻开尘封已久的手机相册。追忆往事，在破碎的记忆中缝缝补补，似乎生活过的也还算丰富多彩。&lt;br&gt;\n故事从SDUST LUG开始，那时还没有LUG，仅仅是SiHuan的兴趣小组。一起玩东方，打绯想天则。通过小组认识了许多有意思的人，包括对我后来产生了重大影响的狸、江文、Kontonl。第一次班委团建和宿舍聚餐；在自律会办公室过了第一个大学生日；被λ拉着接触Kali，这也是后来加入SEC小组的契机；爬上珠山森林公园，喊出散人的那句“我向往自由”；燃香拜佛，随心而行；专业聚餐，两班班长仪式性的交杯酒；参加志愿，看到海上明月共潮生……&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1719039113924.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n当然，没有一场轰轰烈烈的恋爱，没有一次释怀的毕业旅行，甚至没有一张寂寥的背影照。遗憾总是贯穿人生始终。从小时候到现在总觉得很难用成功或者失败定义一个人的生活。从常人的眼光来看，没有考上一个好的学校，没有找到赚钱多的或者说体面的工作，没有成为所有人眼中耀眼的星星，这就是失败。可是生活中每个选择皆是自己所想，每个过程都是自己去体验的。无论做了什么，也许说服自己接受才是最重要的。&lt;br&gt;\n夜晚与凌晨街头的送别，没有“晚风拂柳笛声残”的凄凉，只有沉默的再见。回家未曾感觉到的寂寥和孤单，在意识到许久不会再相见后突然充斥满内心。好在如今并非往昔车马传信，很容易就能在互联网上聊天。但各不相同的生活再不会如从前相互交叉。或激情或麻木，我们终将分别，走在自己的路上。&lt;br&gt;\n别了。山遥路远，有缘再见。&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;你走吧 趁着落日长天&lt;br&gt;\n你走吧 辞去山遥路远&lt;br&gt;\n愿夜里秋风温暖&lt;br&gt;\n街头不寒&lt;br&gt;\n你走吧 趁着天色未晚&lt;br&gt;\n你走吧 明知道阻且难&lt;br&gt;\n我献上明月一盏&lt;br&gt;\n照满河山&lt;br&gt;\n—— Chilichill 《山遥路远》&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://echosorari.github.io/post-images/1719037230555.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;h2 id=\&#34;未来\&#34;&gt;未来&lt;/h2&gt;\n&lt;p&gt;从2021年就开始写自己的博客，算来算去三年有余。不少文章都直接遗失了，没有好好做好备份，仅仅留下了个“残本”。从最开始Catop同学的的服务器上跑起来的Typecho到在Github Page上部署的Hexo再到如今的Gridea，之后甚至有可能再转回Hexo。博客也是一直因为个人原因写的断断续续的。所以第一件事就是把写博客的习惯重新拾起，大概保持一两周一篇一个月两篇的进度记录。&lt;br&gt;\n之后就是改掉曾经用的马甲、换掉域名，以一种新的状态重新面对之后要到来的挑战。同时也会重新整理这个博客中还存在的文章，并且重写一次尽可能的保证文章 的可读性。毕竟我的生活总归是画着一个四分休止符，还有众多事情等待着我去一件件解决。&lt;br&gt;\n我们共勉。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;hello-world-again&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;毕业，是一场兵荒马乱。&lt;br&gt;\n盛夏无止尽的蝉鸣中，一顿不算完美的散伙饭，一张青涩的毕业照，一场拒绝伤感的KTV，一次夜爬笔架山。补全在学校最后一块拼图，挥手离去。大学篇，堂堂完结。&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;Hello World,  Again?&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;随笔&#34;,&#34;slug&#34;:&#34;0URR1B28T&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/0URR1B28T/&#34;}],&#34;date&#34;:&#34;2024-06-21 22:30:40&#34;,&#34;dateFormat&#34;:&#34;2024-06-21&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://echosorari.github.io/post/hello-world-again/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;4 min read&#34;,&#34;time&#34;:190000,&#34;words&#34;:940,&#34;minutes&#34;:4},&#34;description&#34;:&#34;毕业，是一场兵荒马乱。\n盛夏无止尽的蝉鸣中，一顿不算完美的散伙饭，一张青涩的毕业照，一场拒绝伤感的KTV，一次夜爬笔架山。补全在学校最后一块拼图，挥手离去。大学篇，堂堂完结。\n\n畢業\n\n时光一逝永不回\n往事只能回味\n——韩宝仪《往事只能回味...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%95%A2%E6%A5%AD\&#34;&gt;畢業&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%9C%AA%E6%9D%A5\&#34;&gt;未来&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;p&gt;2023即将结束，特此列出2023年所看过有记录在案的书籍、番剧、电影。&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;No&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;Name&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;Author&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;Tag&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;State&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;1&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;四叠半神话大系&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;森见登美彦&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;2&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;流浪地球2&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;郭帆&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;3&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;Air&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;Key&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;番剧&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;4&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;薇薇 -萤石眼之歌-&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;WIT STUDIO&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;番剧&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;5&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;[C]THE MONEY OF SOUL AND POSSIBILITY CONTROL&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;中村健治 / 铃木清崇&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;番剧&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;6&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;病隙碎笔&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;史铁生&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;中国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;7&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;米姆&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;利莫·士弗曼&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;学术研究&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;8&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;铃芽之旅&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;新海诚&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;9&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;天气之子&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;新海诚&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;10&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;最强阴阳师的异世界转生记&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;小玲危一&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;番剧&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;11&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;有顶天家族&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;森见登美彦&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;12&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;有顶天家族2&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;森见登美彦&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;13&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;地铁三部曲&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;Dmitry Glukhovsky&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;14&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;三体：黑暗森林&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;刘慈欣&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;中国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;15&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;三体：死神永生&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;刘慈欣&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;中国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;16&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;孤独摇滚！&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;芳文社&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;番剧&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;17&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;夏日重现&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;田中靖规&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;番剧&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;18&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;相约星期二&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;米奇·阿尔博姆&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;19&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;龙樱&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;秦建日子&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;番剧&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;20&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;当我在跑步的时候我在想些什么&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;村上春树&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;21&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;天空之城&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;宫崎骏&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;22&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;新世纪福音战士&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;庵野秀明&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;番剧&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;23&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;EVA:Air/真心为你&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;庵野秀明&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;番剧&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;24&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;奥本海默&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;克里斯托弗·诺兰&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&#34;,&#34;fileName&#34;:&#34;2023-shu-dan-pian-dan&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;2023即将结束，特此列出2023年所看过有记录在案的书籍、番剧、电影。&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;2023书单/片单&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;书单/片单&#34;,&#34;slug&#34;:&#34;N_HX5BuhX&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/N_HX5BuhX/&#34;}],&#34;date&#34;:&#34;2023-12-23 18:49:16&#34;,&#34;dateFormat&#34;:&#34;2023-12-23&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://echosorari.github.io/post/2023-shu-dan-pian-dan/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:77000,&#34;words&#34;:346,&#34;minutes&#34;:2},&#34;description&#34;:&#34;2023即将结束，特此列出2023年所看过有记录在案的书籍、番剧、电影。\n\n\n\n\nNo\nName\nAuthor\nTag\nState\n\n\n\n\n1\n四叠半神话大系\n森见登美彦\n电影\n√\n\n\n2\n流浪地球2\n郭帆\n电影\n√\n\n\n3\nAir\nKey...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;从好奇开始，一步步报名考试拿到了中国A类业余无限电台操作证，在此进行记录和习题链接，以供好奇的孩子参考。&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;h2 id=\&#34;奇奇怪怪的过程\&#34;&gt;奇奇怪怪的过程&lt;/h2&gt;\n&lt;p&gt;一切的开始起源于各种游戏中出现的无线电通信（《消光》）让中二的我觉得要学一门有用的通讯手段即使在后末日也不至于失联~~（这是可以说的么）~~&lt;br&gt;\n之后我就在bilibili刷到了这么一个视频 ↓&lt;br&gt;\n&lt;a href=\&#34;https://www.bilibili.com/video/BV1HG4y1j79t/?spm_id_from=333.337.search-card.all.click&amp;amp;vd_source=f2399ad1533986f21d7ebfb497599fc2\&#34;&gt;【不止游戏】一个视频教你取得无线电执照！&lt;/a&gt;&lt;br&gt;\n里面所有内容都介绍的十分详细了，包括但不限于&lt;strong&gt;操作证考取，呼号获取，设备证获取&lt;/strong&gt;，可以说是一份非常详实的无线电执照获取攻略。&lt;br&gt;\n恰逢农历新年，于是我就直接咨询了在电信学院精通电信自动化的初学长关于无线电资格证相关事宜。然后得知考试是每年12月的事情，其中去年和前年都因为疫情推迟了。2022年的推迟到了2023年2月28日进行。也就是说今年理论上赶不上了，所以就作为待办事项暂时搁置。&lt;br&gt;\n2月10日和kotori师傅聊天的时候发现泰安的报名考试非常时间非常非常近，然后就相约2月25号去考无线电A类资格证，然后就有了泰山之旅。期间顺便拜访了山东科技大学泰安校区西校区。作为老校区整个学校建筑透漏着一股子古朴的气息。&lt;br&gt;\n对了，这个地方就不得不提我们的kotori同学虽然指导着我报同一场次考试，但是我们俩仍然报了不同的场次这件事。苦逼的我需要上午九点就到达考点在外面等待准备，总觉得自己没有复习好所以考前的晚上也没有睡好，索性起来看了会题目。&lt;br&gt;\n考试的形式是随机30道选择题，我所在的地区考试使用的是机考的形式，不同地区可能有不同差异。同时，山东省各地考取无线电台操作证是完全免费的，包括邮寄证书的费用也由机构本身承担，所以山东省十分鼓励大家去考取相关证明哈哈。&lt;br&gt;\n考试虽然是即刻出结果的，但是等待证书批准邮寄下来还是需要一定的时间的，这段时间就老实回学校等候啦！&lt;br&gt;\n&lt;s&gt;你怎么知道我三分钟就交卷然后错了一道题&lt;/s&gt;&lt;br&gt;\n2023.2.26 拿到了A类业余无线电台操作证。&lt;/p&gt;\n&lt;h2 id=\&#34;一些可能有用的快速攻略指南\&#34;&gt;一些可能有用的快速攻略指南&lt;/h2&gt;\n&lt;p&gt;&lt;a href=\&#34;https://www.jimmytian.com/archives/crac-aro-licence-a-review-guide.html\&#34;&gt;中国 A 类业余无线电台操作证快速复习指北&lt;/a&gt;&lt;br&gt;\n&lt;a href=\&#34;https://iloli.moe/ham/202107272038.html\&#34;&gt;中国无线电协会业余电台 A 类操作证书笔记&lt;/a&gt;&lt;br&gt;\n不过我还是建议直接抱着小程序里面的365道题开刷&lt;sub&gt;毕竟难度并不是非常高提前准备也可以搞定，攻略可以用来做后续补充&lt;/sub&gt;&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;zhong-guo-a-lei-ye-yu-wu-xian-dian-tai-cao-zuo-zheng-get&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;从好奇开始，一步步报名考试拿到了中国A类业余无限电台操作证，在此进行记录和习题链接，以供好奇的孩子参考。&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;中国 A 类业余无线电台操作证GET&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;HAM&#34;,&#34;slug&#34;:&#34;B3yxup7I9&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/B3yxup7I9/&#34;}],&#34;date&#34;:&#34;2023-06-21 17:45:42&#34;,&#34;dateFormat&#34;:&#34;2023-06-21&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://echosorari.github.io/post/zhong-guo-a-lei-ye-yu-wu-xian-dian-tai-cao-zuo-zheng-get/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;3 min read&#34;,&#34;time&#34;:161000,&#34;words&#34;:794,&#34;minutes&#34;:3},&#34;description&#34;:&#34;从好奇开始，一步步报名考试拿到了中国A类业余无限电台操作证，在此进行记录和习题链接，以供好奇的孩子参考。\n\n奇奇怪怪的过程\n一切的开始起源于各种游戏中出现的无线电通信（《消光》）让中二的我觉得要学一门有用的通讯手段即使在后末日也不至于失联~...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA%E7%9A%84%E8%BF%87%E7%A8%8B\&#34;&gt;奇奇怪怪的过程&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E4%B8%80%E4%BA%9B%E5%8F%AF%E8%83%BD%E6%9C%89%E7%94%A8%E7%9A%84%E5%BF%AB%E9%80%9F%E6%94%BB%E7%95%A5%E6%8C%87%E5%8D%97\&#34;&gt;一些可能有用的快速攻略指南&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;本文面向希望使用相对纯净环境以及不愿意接受Unity大中华区三天许可证激活的开发者。国际版Unity提供了相对更长的许可证激活周期（三个月）。需要注意的是，国际版的Unity Editor与大中华区共用进行游戏开发的时候有极低的概率出现错误。&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;!-- more --&gt;\n&lt;p&gt;针对Unity大中华区对国区Unity质量堪忧的“本土化”操作，本文特提供国际版Unity的下载与使用方法以供读者使用，如有错误欢迎指出。&lt;/p&gt;\n&lt;p&gt;附:&lt;a href=\&#34;https://zhuanlan.zhihu.com/p/150326133\&#34;&gt;中国Unity给开发者社区的一封信&lt;/a&gt;&lt;/p&gt;\n&lt;h2 id=\&#34;环境参考\&#34;&gt;环境参考&lt;/h2&gt;\n&lt;p&gt;PC系统环境：Win11 21H2&lt;br&gt;\n&lt;s&gt;曾用测试环境：Ubuntu18.04&lt;/s&gt;&lt;br&gt;\n代理工具：Clash for Windows v0.20.19&lt;br&gt;\nUnity Hub版本：Unity Hub 3.4.2&lt;br&gt;\nUnity Editor版本：Unity 2020.3.41f1&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;P.S. Unity Hub对于Unix/Linux环境仅限Ubuntu16.04、18.04和CentOS 7。&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;h2 id=\&#34;准备工作\&#34;&gt;准备工作&lt;/h2&gt;\n&lt;h3 id=\&#34;区分unity国际版与unity中国特供版区别\&#34;&gt;区分Unity国际版与Unity中国特供版区别&lt;/h3&gt;\n&lt;p&gt;为防止使用国际版Unity的开发者下载到Unity中国特供版，笔者特提供部分区分两个版本的方法以供读者区分：&lt;/p&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;&lt;/th&gt;\n&lt;th&gt;Unity国际版&lt;/th&gt;\n&lt;th&gt;Unity中国特供&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;访问网址&lt;/td&gt;\n&lt;td&gt;www.unity.com&lt;/td&gt;\n&lt;td&gt;www.unity.cn&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;账号注册&lt;/td&gt;\n&lt;td&gt;仅需邮箱&lt;/td&gt;\n&lt;td&gt;需要邮箱，并绑定手机号&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Unity Hub版本后缀&lt;/td&gt;\n&lt;td&gt;f1&lt;/td&gt;\n&lt;td&gt;c1或c后缀存在c字母&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;Unity Editor版本后缀&lt;/td&gt;\n&lt;td&gt;f1&lt;/td&gt;\n&lt;td&gt;c1或c后缀存在c字母&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;许可证激活&lt;/td&gt;\n&lt;td&gt;72hrs&lt;/td&gt;\n&lt;td&gt;3months&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;h3 id=\&#34;卸载并清除pc已经下载的unity开发环境\&#34;&gt;卸载并清除PC已经下载的Unity开发环境&lt;/h3&gt;\n&lt;p&gt;卸载已经安装的中国版本Unity Hub并且清除&lt;code&gt;C:\\Users\\你的用户名\\AppData\\Roaming\\&lt;/code&gt;目录下的Unity Hub文件夹以及Unity文件夹。&lt;/p&gt;\n&lt;h3 id=\&#34;具备vpn科学上网的代理工具\&#34;&gt;具备VPN/科学上网的代理工具&lt;/h3&gt;\n&lt;p&gt;&lt;strong&gt;科学上网是所有操作的大前提&lt;/strong&gt;，如果不具有科学上网能力，是无法注册国际版Unity ID的（无法获得相对长时间的许可证激活），后续账号登陆也无法走国际区。&lt;br&gt;\n如果你使用的为VPN，可以直接进行下列步骤。&lt;br&gt;\n如果你使用的为v2ray/clash等代理软件，由于如Unity Hub等软件不遵循系统代理，请按照如下方式进行操作：&lt;/p&gt;\n&lt;h4 id=\&#34;具有tun-mode模式的代理\&#34;&gt;具有TUN Mode模式的代理：&lt;/h4&gt;\n&lt;p&gt;打开代理软件的TUN Mode模式。TUN 模式可以接管其流量并交由 CFW 处理，使得Unity Hub强制经过代理。&lt;/p&gt;\n&lt;h4 id=\&#34;不具有tun-mode模式的代理\&#34;&gt;不具有TUN Mode模式的代理：&lt;/h4&gt;\n&lt;p&gt;对于没有TUN Mode模式的代理软件，可以通过使系统全部通过浏览器HTTP/HTTPS代理的方式强制使应用经过代理。&lt;/p&gt;\n&lt;ol&gt;\n&lt;li&gt;将unity.com和unity3d.com后缀的网址加入代理列表&lt;/li&gt;\n&lt;li&gt;安装Unity Hub完毕后，建立启动脚本unity_hub_start.bat：&lt;/li&gt;\n&lt;/ol&gt;\n&lt;pre&gt;&lt;code&gt;@echo off\n% 端口为浏览器代理地址端口，具体根据实际情况变动 %\nset HTTP_PROXY=http://127.0.0.1:1080\nset HTTPS_PROXY=http://127.0.0.1:1080\n% 启动地址为打开应用的地址 %\nstart &amp;quot;&amp;quot; &amp;quot;C:\\Program Files\\Unity Hub\\Unity Hub.exe&amp;quot;\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h3 id=\&#34;注册国际unity-id\&#34;&gt;注册国际Unity ID&lt;/h3&gt;\n&lt;p&gt;挂起代理后，通过https://unity.com/ 访问Unity国际官网，点击右上角图标，选择“Create a Unity ID”，输入邮箱进行注册。使用邮箱尽量为非国区邮箱，优先使用Google邮箱、Outlook邮箱进行注册。&lt;br&gt;\n请注意区分注册，Unity大中华区注册需要填写并绑定手机号，Unity国际版不需要。&lt;/p&gt;\n&lt;h2 id=\&#34;下载并安装unity-hub\&#34;&gt;下载并安装Unity Hub&lt;/h2&gt;\n&lt;p&gt;如果已经使用VPN或挂载代理，直接访问&lt;a href=\&#34;www.unity.com\&#34;&gt;Unity官网&lt;/a&gt;点击下载并安装Unity Hub即可。&lt;br&gt;\n下载完成后，&lt;strong&gt;一定记得打开代理的TUN Mode功能或者使用脚本启动&lt;/strong&gt;！启动后首先观察左上角Unity Hub的版本号判断是否为国际版（如图），如果不是，删除&lt;code&gt;C:\\Users\\你的用户名\\AppData\\Roaming\\&lt;/code&gt;目录下的Unity Hub文件夹以及Unity文件夹并重试。&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619284091.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n点击登录，注意唤起界面。下图为https://id.unity.cn/ 界面：&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619289438.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n正确的国际版登录界面为https://id.unity.com/ 下图：&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619293752.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n登录过期后，如果不愿意登录也可以选择通过导入国际版激活许可证的方式使用Unity。&lt;/p&gt;\n&lt;h2 id=\&#34;下载并安装unity-editor\&#34;&gt;下载并安装Unity Editor&lt;/h2&gt;\n&lt;h4 id=\&#34;通过unity-hub直接下载安装\&#34;&gt;通过Unity Hub直接下载安装&lt;/h4&gt;\n&lt;p&gt;在代理模式下，理论上可以直接通过Unity Hub安装相应版本的Unity Editor，下载完毕后注意观察Editor版本后缀是否为国际版后缀。&lt;/p&gt;\n&lt;h4 id=\&#34;通过三方网站下载安装\&#34;&gt;通过三方网站下载安装&lt;/h4&gt;\n&lt;p&gt;考虑到仍有下载到中国特供版Unity的可能，特提供一个收集官方Installer和BT种子的项目：&lt;br&gt;\n&lt;a href=\&#34;https://unityitellyou.github.io/\&#34;&gt;Unity I Tell You&lt;/a&gt;&lt;br&gt;\n本部分内容参考&lt;a href=\&#34;https://zhuanlan.zhihu.com/p/148669073\&#34;&gt;如何下载原版Unity&lt;/a&gt;&lt;/p&gt;\n&lt;h2 id=\&#34;使用\&#34;&gt;使用&lt;/h2&gt;\n&lt;p&gt;通过以上步骤，你已经可以正常使用国际版的Unity Hub以及Unity Editor了。需要注意的是，在每次打开Unity Hub的时候都需要使用脚本启动或者代理工具开启TUN Mode功能，否则登录仍然有跳转国区的可能。&lt;br&gt;\n希望你能够享受相对纯粹开发过程并减少外界干扰~&lt;/p&gt;\n&lt;h2 id=\&#34;参考\&#34;&gt;参考&lt;/h2&gt;\n&lt;p&gt;&lt;a href=\&#34;https://www.logiconsole.com/fuck-unity-cn/\&#34;&gt;如何逃离Unity中国特供版&lt;/a&gt;&lt;br&gt;\n&lt;a href=\&#34;https://zhuanlan.zhihu.com/p/148669073\&#34;&gt;如何下载原版Unity&lt;/a&gt;&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;unityeditor-and-unityhub-guo-ji-ban-xia-zai-shi-yong-zhi-bei&#34;,&#34;abstract&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;本文面向希望使用相对纯净环境以及不愿意接受Unity大中华区三天许可证激活的开发者。国际版Unity提供了相对更长的许可证激活周期（三个月）。需要注意的是，国际版的Unity Editor与大中华区共用进行游戏开发的时候有极低的概率出现错误。&lt;/p&gt;\n&lt;/blockquote&gt;\n&#34;,&#34;title&#34;:&#34;Unity国际版下载使用指北&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;Unity&#34;,&#34;slug&#34;:&#34;xAdNBY6J4&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/xAdNBY6J4/&#34;},{&#34;name&#34;:&#34;Game Engine&#34;,&#34;slug&#34;:&#34;FEN5e5a3io&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/FEN5e5a3io/&#34;}],&#34;date&#34;:&#34;2023-04-26 18:13:15&#34;,&#34;dateFormat&#34;:&#34;2023-04-26&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://echosorari.github.io/post/unityeditor-and-unityhub-guo-ji-ban-xia-zai-shi-yong-zhi-bei/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;5 min read&#34;,&#34;time&#34;:288000,&#34;words&#34;:1276,&#34;minutes&#34;:5},&#34;description&#34;:&#34;\n本文面向希望使用相对纯净环境以及不愿意接受Unity大中华区三天许可证激活的开发者。国际版Unity提供了相对更长的许可证激活周期（三个月）。需要注意的是，国际版的Unity Editor与大中华区共用进行游戏开发的时候有极低的概率出现错...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%8E%AF%E5%A2%83%E5%8F%82%E8%80%83\&#34;&gt;环境参考&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C\&#34;&gt;准备工作&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8C%BA%E5%88%86unity%E5%9B%BD%E9%99%85%E7%89%88%E4%B8%8Eunity%E4%B8%AD%E5%9B%BD%E7%89%B9%E4%BE%9B%E7%89%88%E5%8C%BA%E5%88%AB\&#34;&gt;区分Unity国际版与Unity中国特供版区别&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8D%B8%E8%BD%BD%E5%B9%B6%E6%B8%85%E9%99%A4pc%E5%B7%B2%E7%BB%8F%E4%B8%8B%E8%BD%BD%E7%9A%84unity%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83\&#34;&gt;卸载并清除PC已经下载的Unity开发环境&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B7%E5%A4%87vpn%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91%E7%9A%84%E4%BB%A3%E7%90%86%E5%B7%A5%E5%85%B7\&#34;&gt;具备VPN/科学上网的代理工具&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B7%E6%9C%89tun-mode%E6%A8%A1%E5%BC%8F%E7%9A%84%E4%BB%A3%E7%90%86\&#34;&gt;具有TUN Mode模式的代理：&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E4%B8%8D%E5%85%B7%E6%9C%89tun-mode%E6%A8%A1%E5%BC%8F%E7%9A%84%E4%BB%A3%E7%90%86\&#34;&gt;不具有TUN Mode模式的代理：&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%B3%A8%E5%86%8C%E5%9B%BD%E9%99%85unity-id\&#34;&gt;注册国际Unity ID&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%AE%89%E8%A3%85unity-hub\&#34;&gt;下载并安装Unity Hub&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E4%B8%8B%E8%BD%BD%E5%B9%B6%E5%AE%89%E8%A3%85unity-editor\&#34;&gt;下载并安装Unity Editor&lt;/a&gt;&lt;br&gt;\n*\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E9%80%9A%E8%BF%87unity-hub%E7%9B%B4%E6%8E%A5%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85\&#34;&gt;通过Unity Hub直接下载安装&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E9%80%9A%E8%BF%87%E4%B8%89%E6%96%B9%E7%BD%91%E7%AB%99%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85\&#34;&gt;通过三方网站下载安装&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E4%BD%BF%E7%94%A8\&#34;&gt;使用&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8F%82%E8%80%83\&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;p&gt;类银河战士恶魔城类（Metroidvania）游戏作为一类小众游戏，一直具有着经久不衰的魅力。由于笔者最近同样通关过几款本品类的游戏，遂撰写本文，本文旨在对类银河战士恶魔城类游戏的特点与受众进行浅明简要分析，仅供参考。&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;h2 id=\&#34;核心玩法循环\&#34;&gt;核心玩法循环&lt;/h2&gt;\n&lt;p&gt;游戏的定义以及核心玩法决定了品类的核心玩法循环。维基百科对类银河战士恶魔城类游戏的定义如下：&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;银河恶魔城游戏中通常有可供玩家探索的大型相连世界地图，但是进入地图某处的特定地点往往会有门或其他障碍物限制玩家，只有当玩家在游戏中获得特殊道具、工具、武器或能力后才能通过。这些新的提升还能帮助玩家击败更高难度的敌人并找到捷径和秘密区域，包括经常回顾已经探索过的地图区域。银河恶魔城游戏通过这样的设计使故事和关卡设计整合得更紧密，以精心设计的关卡和角色控制来鼓励玩家探索和实验，使之更投入自己的角色。&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;定义强调了一种机制，即&lt;strong&gt;锁（LOCK）-钥匙（KEY）&lt;strong&gt;机制。而在后续的分析中，我们也同样会发现，本机制是构成整个类银河战士恶魔城游戏的整体。&lt;br&gt;\n以《Ender Lilies:Knights Quietus of Knights》为例，简要列出其核心玩法循环，不难发现游戏的主题游玩流程是探索地图-&amp;gt;打败BOSS-&amp;gt;获得钥匙-&amp;gt;探索地图，因此我们可以画出它的核心玩法循环。&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718618700319.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n可以看出，类银河战士恶魔城类游戏的核心驱动为&lt;/strong&gt;探索&lt;/strong&gt;。&lt;/p&gt;\n&lt;h2 id=\&#34;核心特点\&#34;&gt;核心特点&lt;/h2&gt;\n&lt;p&gt;五十岚孝司曾谈到他认为该类型游戏具备的关键要素。其中包含设计一个地图&lt;strong&gt;鼓励自由探索&lt;/strong&gt;，但仍会适时引导玩家进行主线流程，也会提供一些手段让玩家意识到自己身在何处。&lt;br&gt;\n概括来说，类银河战士恶魔城游戏是建立了一个以**探索（Explore）**为目的核心的，**地图（Map）、角色（Character）、锁机制（Lock）**相互关联组成完整系统，彼此之间的正反馈循环增强了游戏的探索性。其各个元素之间关系如下：&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718618715583.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n接下来笔者便以三个元素为基础分析其设计。&lt;/p&gt;\n&lt;h3 id=\&#34;玩法设计\&#34;&gt;玩法设计&lt;/h3&gt;\n&lt;p&gt;玩法上，存在&lt;strong&gt;锁（LOCK）机制&lt;/strong&gt;。&lt;br&gt;\n锁机制是整个类银河战士恶魔城游戏中的核心机制。所谓锁机制，即通过对地图/技能“上锁”的形式，对玩家的探索路线进行一定的限制。这种限制使得关卡设计者可以在保证地图具有相对较高自由的探索性的情况下，为游戏提供完整的流程叙事（除碎片化叙事之外）和地图重复探索体验。如《Ender Lilies:Knights Quietus of Knights》会在游戏后期地牢中获得开锁技能，打开前期无法经过的地方；《Touhou Luna Nights》击败每个区域地图关底BOSS时会存在一个可以获得钥匙的房间，要是可以通往其他区域地图。&lt;br&gt;\n一般的类银河战士恶魔城游戏提供两种锁机制，分别为&lt;strong&gt;技能锁&lt;/strong&gt;与&lt;strong&gt;关卡锁&lt;/strong&gt;：&lt;/p&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;锁机制&lt;/th&gt;\n&lt;th&gt;描述&lt;/th&gt;\n&lt;th&gt;缺点&lt;/th&gt;\n&lt;th&gt;关卡联系&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;关卡锁&lt;/td&gt;\n&lt;td&gt;提供解锁新地图区块所需的钥匙，一般由地图区块的BOSS掉落&lt;/td&gt;\n&lt;td&gt;获得方式相对简单，用途单一&lt;/td&gt;\n&lt;td&gt;解锁新地图区块&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;技能锁&lt;/td&gt;\n&lt;td&gt;提供探索新地图区块所必需的技能（二段跳、爬墙、冲刺、滑铲等），一般由地图区块的BOSS掉落&lt;/td&gt;\n&lt;td&gt;相对更为考验关卡策划的地图设计能力，容易出现质量较低的地图&lt;/td&gt;\n&lt;td&gt;通过技能操作解锁新地图区块或通过技能重复探索旧地图隐藏道具、剧情&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;h3 id=\&#34;关卡设计\&#34;&gt;关卡设计&lt;/h3&gt;\n&lt;p&gt;关卡设计上，地图设计为多个区块及其从属区块组成了一张&lt;strong&gt;相连的、非线性的大地图&lt;/strong&gt;，并且地图具有&lt;strong&gt;可重复探索的特性&lt;/strong&gt;；相连非线性的大地图以及区域地图区块分割设计使得&lt;strong&gt;至少有两条路线可以连接区域地图区块&lt;/strong&gt;。&lt;br&gt;\n类银河战士恶魔城类游戏小地图设计模式一般分为两种，分别是以空洞骑士为代表地形连接地图与传统的块状连接地图，两种小地图设计形式各有千秋。两种类型的区别如下表：&lt;/p&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th&gt;地图设计形式&lt;/th&gt;\n&lt;th&gt;代表作品&lt;/th&gt;\n&lt;th&gt;优点&lt;/th&gt;\n&lt;th&gt;缺点&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td&gt;地形链接图&lt;/td&gt;\n&lt;td&gt;《Hollow Knight》&lt;/td&gt;\n&lt;td&gt;可以将区块地图设计的相对复杂，提供了更多的探索乐趣&lt;/td&gt;\n&lt;td&gt;对地图设计师的要求极高，很容易弄巧成拙&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td&gt;块状连接图&lt;/td&gt;\n&lt;td&gt;《Bloodstained：Ritual of the Night》&lt;/td&gt;\n&lt;td&gt;区块间连接位置明显，容易辨识和进行区块间的移动&lt;/td&gt;\n&lt;td&gt;区块地图设计容易简单化，减小地图的探索性。&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;下图分别为《Hollow Knight》与《东方月神夜》的地图设计，恰如其分的包含了笔者叙述的两种情况。&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718618725216.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n东方月神夜为代表的块状连接图：&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718618735985.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;h3 id=\&#34;角色设计\&#34;&gt;角色设计&lt;/h3&gt;\n&lt;p&gt;在角色设计上，重复探索与锁机制所获得的物品会以某种形式正反馈至角色，并反馈于地图探索。&lt;br&gt;\n恶魔城的偏向使得类银河战士恶魔城游戏的角色&lt;strong&gt;具有一定的成长性质&lt;/strong&gt;。在地图探索的过程中，玩家可以在隐藏区域寻找到道具物品、金钱、技能等对角色提升、地图探索有一定帮助的物品。部分具有等级提升成长元素。&lt;/p&gt;\n&lt;h2 id=\&#34;用户特征\&#34;&gt;用户特征&lt;/h2&gt;\n&lt;p&gt;从性格上，类银河战士恶魔城类游戏更适合具有强烈探索精神的玩家，能够应对复杂但是具有自由解法的挑战。&lt;br&gt;\n从游戏诉求角度，类银河战士恶魔城游戏玩家对游戏具有“趣味性”“创新性”“探索性”的执着，对游戏画质诉求相对较低。&lt;br&gt;\n从消费习惯的角度，此品类游戏玩家具有长期并稳定的游戏消费习惯，同时游戏依赖性以及黏度高。&lt;/p&gt;\n&lt;h3 id=\&#34;日活玩家数据表分析\&#34;&gt;日活玩家数据表分析&lt;/h3&gt;\n&lt;p&gt;通过SteamDB本身的比较功能，比较几款相对代表性的该品类游戏的历史日活玩家数据表：&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718618741697.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n以年份为维度进行分析，日活玩家数量相对稳定且具有增加趋势，不存在数据断层现象。说明此游戏品类的玩家具有相对较高的的用户黏度。&lt;br&gt;\n为了使数据具有普适性，笔者从SteamDB中通过“Metroidvania”关键词对游戏进行筛选，选取日活玩家最多的《Hollow Knight》作为类银河战士恶魔城类游戏的代表进行用户分析：&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718618746173.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n使用Web Scraper工具选取豆瓣中对《Hollow Knight》的短评进行爬取获得数据集，其中包含用户昵称、游玩设备以及短评，获得数据共5464条。&lt;/p&gt;\n&lt;h3 id=\&#34;用户游玩设备分析\&#34;&gt;用户游玩设备分析&lt;/h3&gt;\n&lt;p&gt;清洗无关数据，使用新数据集对游玩设备进行数据分析，各游玩设备占比如下:&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718618751215.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n根据饼图可以看出，游玩类银河战士恶魔城游戏的玩家大多为端游玩家以及Switch玩家，同时具有少数的主机玩家。&lt;br&gt;\nPC玩家相对来讲具有丰富的游戏经验（尤其是小众游戏类型），对于游戏（尤其是独立游戏）付费具有高用户黏度和稳定性。Switch玩家多与便携、游戏创新性挂钩，由于Switch设备高昂售价以及相对中庸的性能，Switch玩家同样具有稳定甚至高于PC玩家游戏付费的稳定性以及对游戏创新性与趣味性的诉求。&lt;/p&gt;\n&lt;h3 id=\&#34;玩家画像分析\&#34;&gt;玩家画像分析&lt;/h3&gt;\n&lt;p&gt;数据集中的短评进行数据清洗，清洗掉副词、量词等数据，同时去除与游戏内容关联较强的数据（如游戏中的地名、角色名），保留相对有品类概括性的数据进行词频分析，将词频数据制作成词云（玩家画像）如下：&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718618755850.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n通过词云明显的看出玩家对类银河战士恶魔城游戏相关的游戏诉求：设计、画风、故事（剧情）、配乐、氛围、地图、类魂。&lt;/p&gt;\n&lt;h3 id=\&#34;游戏自身特征分析\&#34;&gt;游戏自身特征分析&lt;/h3&gt;\n&lt;p&gt;类银河战士恶魔城游戏的关键词是**“探索”&lt;strong&gt;，一切设计皆是围绕探索展开。对此品类游戏感兴趣的玩家，本身&lt;/strong&gt;具有高度的探索欲和耐心**，部分游戏会加入类魂元素，更为考验玩家对挑战的态度。&lt;/p&gt;\n&lt;h2 id=\&#34;参考\&#34;&gt;参考&lt;/h2&gt;\n&lt;p&gt;&lt;a href=\&#34;https://tendcode.com/tool/word-cloud/\&#34;&gt;在线词云生成器&lt;/a&gt;&lt;br&gt;\n&lt;a href=\&#34;https://www.zhihu.com/question/295152089\&#34;&gt;游戏类型Metroidvania（类恶魔城银河战士）是什么意思-锁机制&lt;/a&gt;&lt;br&gt;\n&lt;a href=\&#34;https://zh.wikipedia.org/wiki/%E7%B1%BB%E9%93%B6%E6%B2%B3%E6%88%98%E5%A3%AB%E6%81%B6%E9%AD%94%E5%9F%8E%E6%B8%B8%E6%88%8F\&#34;&gt;类银河战士恶魔城游戏-维基百科&lt;/a&gt;&lt;br&gt;\n&lt;a href=\&#34;https://steamdb.info/charts/?compare=283640,367520,400910,588650,692850,774361,851100,1057090,1306630,1369630\&#34;&gt;几款类银河战士恶魔城游戏的品类用户增长数据比较&lt;/a&gt;&lt;br&gt;\n&lt;a href=\&#34;https://www.lzltool.cn/word-frequency\&#34;&gt;词频分析工具&lt;/a&gt;&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;lei-yin-he-zhan-shi-e-mo-cheng-metroidvaniayou-xi-jian-xi&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;类银河战士恶魔城类（Metroidvania）游戏作为一类小众游戏，一直具有着经久不衰的魅力。由于笔者最近同样通关过几款本品类的游戏，遂撰写本文，本文旨在对类银河战士恶魔城类游戏的特点与受众进行浅明简要分析，仅供参考。&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;类银河战士恶魔城（Metroidvania）游戏简析&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;Game Analysis&#34;,&#34;slug&#34;:&#34;dxZfk1hCg&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/dxZfk1hCg/&#34;}],&#34;date&#34;:&#34;2023-04-20 18:03:31&#34;,&#34;dateFormat&#34;:&#34;2023-04-20&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://echosorari.github.io/post/lei-yin-he-zhan-shi-e-mo-cheng-metroidvaniayou-xi-jian-xi/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;9 min read&#34;,&#34;time&#34;:480000,&#34;words&#34;:2353,&#34;minutes&#34;:9},&#34;description&#34;:&#34;类银河战士恶魔城类（Metroidvania）游戏作为一类小众游戏，一直具有着经久不衰的魅力。由于笔者最近同样通关过几款本品类的游戏，遂撰写本文，本文旨在对类银河战士恶魔城类游戏的特点与受众进行浅明简要分析，仅供参考。\n\n核心玩法循环\n游戏...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%A0%B8%E5%BF%83%E7%8E%A9%E6%B3%95%E5%BE%AA%E7%8E%AF\&#34;&gt;核心玩法循环&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%A0%B8%E5%BF%83%E7%89%B9%E7%82%B9\&#34;&gt;核心特点&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%8E%A9%E6%B3%95%E8%AE%BE%E8%AE%A1\&#34;&gt;玩法设计&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B3%E5%8D%A1%E8%AE%BE%E8%AE%A1\&#34;&gt;关卡设计&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%A7%92%E8%89%B2%E8%AE%BE%E8%AE%A1\&#34;&gt;角色设计&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%94%A8%E6%88%B7%E7%89%B9%E5%BE%81\&#34;&gt;用户特征&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%97%A5%E6%B4%BB%E7%8E%A9%E5%AE%B6%E6%95%B0%E6%8D%AE%E8%A1%A8%E5%88%86%E6%9E%90\&#34;&gt;日活玩家数据表分析&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%94%A8%E6%88%B7%E6%B8%B8%E7%8E%A9%E8%AE%BE%E5%A4%87%E5%88%86%E6%9E%90\&#34;&gt;用户游玩设备分析&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%8E%A9%E5%AE%B6%E7%94%BB%E5%83%8F%E5%88%86%E6%9E%90\&#34;&gt;玩家画像分析&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%B8%B8%E6%88%8F%E8%87%AA%E8%BA%AB%E7%89%B9%E5%BE%81%E5%88%86%E6%9E%90\&#34;&gt;游戏自身特征分析&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8F%82%E8%80%83\&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;p&gt;使用Hexo很长一段时间了，但是每次一时兴起更换设备操作系统后总会突然想起自己的博客数据没有进行备份，只能凭借记忆狠狠的回忆当时的文章内容。最近恰好有时间，痛定思痛直接研究研究数据备份和迁移的事情，来保证博客内容尽可能的不丢失。&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;h2 id=\&#34;准备工作\&#34;&gt;准备工作&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;\n&lt;p&gt;Git（已配置）&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Node.js环境&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;Github账号&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;p&gt;如果不了解GIt的基本配置过程（Git基本指令、Git config配置、ssh key远程连接配置）可以自行百度，本文不再赘述。&lt;/p&gt;\n&lt;h2 id=\&#34;数据备份\&#34;&gt;数据备份&lt;/h2&gt;\n&lt;p&gt;数据备份有多种办法，可以网盘/U盘等等，但是每次写完文章都要再打开网盘/掏出U盘再拷贝一次相对非常繁琐，本文采用的是于Github建立仓库进行备份的方式，将必要数据push到仓库，通过命令push以及clone都会相对简便较多。&lt;/p&gt;\n&lt;h3 id=\&#34;建立仓库并进行远程连接\&#34;&gt;建立仓库并进行远程连接&lt;/h3&gt;\n&lt;ol&gt;\n&lt;li&gt;\n&lt;p&gt;在Github中新建Repository，命名为BlogArchive。&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;打开本地博客文件夹（此处以”F:\\Blog“为例）初始化并远程连接Git仓库。指令如下：&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ol&gt;\n&lt;pre&gt;&lt;code&gt;$ cd F:\\Blog\n$ git init\n$ git remote add origin https://github.com/your_github_name/BlogArchive.git\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h3 id=\&#34;配置gitignore并push重要文件\&#34;&gt;配置.gitignore并Push重要文件&lt;/h3&gt;\n&lt;ol&gt;\n&lt;li&gt;新建.gitignore文件并添加非必要文件，方便上传重要文件。以下是我的.gitignore配置目录，仅供参考（如果感兴趣可以自行百度gitignore配置方法）。&lt;/li&gt;\n&lt;/ol&gt;\n&lt;pre&gt;&lt;code&gt;.DS_Store\nThumbs.db\ndb.json\n*.log\nnode_modules/\npublic/\n.deploy*/\n_multiconfig.yml\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;同时此处也提供重要文件夹的目录，如果您选择其他方式备份，也可以提供参考：&lt;/p&gt;\n&lt;pre&gt;&lt;code&gt;scaffolds/  \nsource /    \nthemes/     \n_config.yml \npackage.json  \n&lt;/code&gt;&lt;/pre&gt;\n&lt;ol&gt;\n&lt;li&gt;将重要数据备份并push到远程仓库进行备份。指令如下：&lt;/li&gt;\n&lt;/ol&gt;\n&lt;pre&gt;&lt;code&gt;# 远程仓库为空时的指令参考\n$ git push -u origin master\n# 远程仓库非空时的指令参考\n$ git push origin master\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;至此，数据备份完成。&lt;strong&gt;为方便随时备份数据，更换设备后的Blog文件夹也同样建议远程连接备份数据库，每次更新完后进行如下操作随时进行备份。&lt;/strong&gt;&lt;/p&gt;\n&lt;pre&gt;&lt;code&gt;$ git add .\n$ git commit -m &amp;quot;update content&amp;quot;\n$ git push\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h2 id=\&#34;数据恢复\&#34;&gt;数据恢复&lt;/h2&gt;\n&lt;h3 id=\&#34;本地hexo安装与恢复\&#34;&gt;本地hexo安装与恢复&lt;/h3&gt;\n&lt;ol&gt;\n&lt;li&gt;\n&lt;p&gt;新设备创建Blog目录，用于存放文件&lt;/p&gt;\n&lt;/li&gt;\n&lt;li&gt;\n&lt;p&gt;安装hexo以及必要模块，clone备份文件到本地&lt;/p&gt;\n&lt;/li&gt;\n&lt;/ol&gt;\n&lt;pre&gt;&lt;code&gt;$ cd Blog\n$ npm install -g hexo-cli\n$ git clone https://github.com/your_github_name/BlogArchive.git Blog\n&lt;/code&gt;&lt;/pre&gt;\n&lt;h3 id=\&#34;hexo相关功能恢复\&#34;&gt;hexo相关功能恢复&lt;/h3&gt;\n&lt;ol&gt;\n&lt;li&gt;安装文章部署远程插件及其他插件&lt;/li&gt;\n&lt;/ol&gt;\n&lt;p&gt;文章部署远程插件是必要的，它可以将你的文章部署到Github page。&lt;/p&gt;\n&lt;p&gt;同时找到所使用的主题的官方文档，查看功能实现所需要的插件，这里以cactus主题的搜索功能为例，参考命令如下：&lt;/p&gt;\n&lt;pre&gt;&lt;code&gt;# 文章远程部署插件\n$ npm install hexo-deployer-git --save\n# 安装其他插件\n$ npm install npm install hexo-generator-search --save\n&lt;/code&gt;&lt;/pre&gt;\n&lt;ol&gt;\n&lt;li&gt;本地测试运行并远程部署&lt;/li&gt;\n&lt;/ol&gt;\n&lt;pre&gt;&lt;code&gt;# 本地测试\n$ hexo server\n$ hexo s\n# 将数据部署到云端\n$ hexo clean\n$ hexo g\n$ hexo d\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;至此，新的博客本地部署完成，可以继续愉快的写博客啦！&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;geng-huan-she-bei-hou-hexo-blog-bei-fen-yu-hui-fu&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;使用Hexo很长一段时间了，但是每次一时兴起更换设备操作系统后总会突然想起自己的博客数据没有进行备份，只能凭借记忆狠狠的回忆当时的文章内容。最近恰好有时间，痛定思痛直接研究研究数据备份和迁移的事情，来保证博客内容尽可能的不丢失。&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;更换设备后Hexo Blog备份与恢复&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;Blog&#34;,&#34;slug&#34;:&#34;HS4U-Ss-F&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/HS4U-Ss-F/&#34;},{&#34;name&#34;:&#34;Hexo&#34;,&#34;slug&#34;:&#34;sPeZ19RoY&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/sPeZ19RoY/&#34;}],&#34;date&#34;:&#34;2023-01-31 15:52:00&#34;,&#34;dateFormat&#34;:&#34;2023-01-31&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://echosorari.github.io/post/geng-huan-she-bei-hou-hexo-blog-bei-fen-yu-hui-fu/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;4 min read&#34;,&#34;time&#34;:181000,&#34;words&#34;:793,&#34;minutes&#34;:4},&#34;description&#34;:&#34;使用Hexo很长一段时间了，但是每次一时兴起更换设备操作系统后总会突然想起自己的博客数据没有进行备份，只能凭借记忆狠狠的回忆当时的文章内容。最近恰好有时间，痛定思痛直接研究研究数据备份和迁移的事情，来保证博客内容尽可能的不丢失。\n\n准备工作...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C\&#34;&gt;准备工作&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%95%B0%E6%8D%AE%E5%A4%87%E4%BB%BD\&#34;&gt;数据备份&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%BB%BA%E7%AB%8B%E4%BB%93%E5%BA%93%E5%B9%B6%E8%BF%9B%E8%A1%8C%E8%BF%9C%E7%A8%8B%E8%BF%9E%E6%8E%A5\&#34;&gt;建立仓库并进行远程连接&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E9%85%8D%E7%BD%AEgitignore%E5%B9%B6push%E9%87%8D%E8%A6%81%E6%96%87%E4%BB%B6\&#34;&gt;配置.gitignore并Push重要文件&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%95%B0%E6%8D%AE%E6%81%A2%E5%A4%8D\&#34;&gt;数据恢复&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%9C%AC%E5%9C%B0hexo%E5%AE%89%E8%A3%85%E4%B8%8E%E6%81%A2%E5%A4%8D\&#34;&gt;本地hexo安装与恢复&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#hexo%E7%9B%B8%E5%85%B3%E5%8A%9F%E8%83%BD%E6%81%A2%E5%A4%8D\&#34;&gt;hexo相关功能恢复&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;p&gt;2022年即将结束，在此列出这一年内看过的书籍、番剧、电影。&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;No&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;Name&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;Author&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;Tag&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;State&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;1&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;原则&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;达里欧&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;实用性工具&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;2&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;银河铁道之夜&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;宫泽贤治&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;3&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;程序员修炼之道：从小工到专家&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;戴维·托马斯etc.&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;4&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;浮士德&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;歌德&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;5&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;吉卜力的风&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;铃木敏夫&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;杂谈笔记&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;6&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;游戏设计梦工厂&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;Tracy Fullerton&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;游戏设计&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;7&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;知晓天空之蓝的人啊&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;长井龙雪（CloverWorks）&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;8&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;普罗米亚&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;今石洋之（扳机社）&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;9&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;银河铁道之夜&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;宫泽贤治&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;10&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;你的名字。&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;新海诚&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;11&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;奔跑吧！梅洛斯&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;森见登美彦&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;12&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;游戏开发者访谈录&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;小野宪史&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;13&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;通关！游戏之道&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;Scott Rogers&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;游戏设计&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;14&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;若能与你共乘海浪之上&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;汤浅政明&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;15&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;泡泡&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;荒木哲郎&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;16&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;赛博朋克：边缘行者&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;扳机社&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;17&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;比海更深&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;是枝裕和&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;18&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;SSSS.古立特&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;扳机社（TRIGGER）&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&#34;,&#34;fileName&#34;:&#34;2022-shu-dan-pian-dan&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;2022年即将结束，在此列出这一年内看过的书籍、番剧、电影。&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;2022书单/片单&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;书单/片单&#34;,&#34;slug&#34;:&#34;N_HX5BuhX&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/N_HX5BuhX/&#34;}],&#34;date&#34;:&#34;2022-12-30 18:44:24&#34;,&#34;dateFormat&#34;:&#34;2022-12-30&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://echosorari.github.io/post/2022-shu-dan-pian-dan/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:61000,&#34;words&#34;:278,&#34;minutes&#34;:2},&#34;description&#34;:&#34;2022年即将结束，在此列出这一年内看过的书籍、番剧、电影。\n\n\n\n\nNo\nName\nAuthor\nTag\nState\n\n\n\n\n1\n原则\n达里欧\n实用性工具\n√\n\n\n2\n银河铁道之夜\n宫泽贤治\n外国文学\n√\n\n\n3\n程序员修炼之道：从小工到...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;你这什么比赛啊72小时怎么一直有人在群里报进度，太卷了太卷了，下次不来了.jpg&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;!-- more --&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619654061.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;首先感谢本次比赛虽然是线上路人局，但是遇到许多有意思的人，无论是我们队伍的策划选手毛球；程序选手左轮、西洲、流星画魂；美术沐叽、神龙；还是推荐我打一打本次比赛的负责人Steven，虽然只是打杂选手但是还是收获颇多。&lt;/p&gt;\n&lt;p&gt;不过就算比赛没有完全做完，赛前玩《你画我猜》的时候大家也是挺欢乐的hhh&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;2\&#34;&gt;&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619666507.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;本次“益游未尽”Game Jam是72小时的开发，和大部分正常的48h Game Jam从时间安排上还有一些区别的。在面试志愿者的时候Steven推荐没有打过此类比赛的我来尝试一下接触Game Jam赛事。不过说赛事其实有些不合适啦，毕竟GJ本身就是一起玩的party。&lt;/p&gt;\n&lt;p&gt;初次参加比赛，72小时“致郁”了我的精神内耗www。&lt;/p&gt;\n&lt;p&gt;作为打杂人员兼PM，很惭愧Unity/C#技术以及2D pixel技术都不太到家没能帮上什么忙（除了进行了一个长时间的监工），熬了60+小时熬秃头了熬秃头了。不过作为初次参加GameJam的选手，还是有很多共性问题值得review的。&lt;s&gt;人真的就是了解过相关内容了还是会重蹈覆辙（指指点点）&lt;/s&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;赛前确定各个组员本次使用的工具&lt;/strong&gt;还是很重要的，本来我以为需要进行处理的只有程序所用引擎以及版本的统一、以及确定项目管理工具就可以了，后来问题就很大了，可以说很多是没有统筹好的结果（也可以说过于自信以为之前初次参加比赛的人写到关于这一方面失误的文章自己不会犯错，看来初次参加的选手或多或少都会重蹈覆辙的别骂了别骂了）&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;个人职业能力需要过硬&lt;/strong&gt;。这里的职业能力不是指行业内能力，而是“至少能够完成自己的任务”。比赛很容易遇到许多萌新选手，倒也不是说萌新没有参赛的资格，毕竟我也是萌新233。在比赛的时候，会遇到许多悬而未决的问题，但是在范围内的至少需要程序懂得搭场景，美术懂得帧动画、骨骼动画相关内容。&lt;s&gt;当然不懂也没关系，比赛前可以进行一个速成&lt;/s&gt;&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;完成度与体量的抉择&lt;/strong&gt;。对于项目一定是完成度优先。无论是前期规划还是后期削砍，在后期联系的时候许多选手吐槽自己做不完了、高估了三天的体量削减了一大半等等。~~这就涉及到迭代设计理论了。~~及时制作出原型，保证游戏本身最简化的表达能够达到后，再通过不断的产品迭代进行完善和加强。许多提交的作品相对来说都是半成品（比如我们组），其实是完全没有办法得到完整的体验的，最后的成绩自然也不会特别好看。所以&lt;strong&gt;优先保证自己作品的完成度&lt;/strong&gt;是很重要的。&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;3\&#34;&gt;&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619677809.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;&lt;strong&gt;程序版本迭代与美术素材管理&lt;/strong&gt;。原本我们采用的是git进行分布式管理，使两者在不同的分支进行。但是没有想到部分程序对git并不是十分熟悉（美术则是完全不熟悉，没有办法把资源托管到远程）。后续的解决方式对于git操作这一块我们采用了SourceTree这一工具GUI化git 操作，相对来说操作更为简便；对于素材管理，本身使用的是QQ群群文件进行统一管理，但是后期发现了群文件无法满足“文件夹内创建文件夹”这一需求。后续的处理方法是使用腾讯微云的共享组进行文件共享，虽然效果也一般但是学习时间成本相对还是较低的。而进度管理采用的则是可以共享编辑的Excel表格，效果还算可以。&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;4\&#34;&gt;&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619684606.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;&lt;strong&gt;工期与队友情绪管理&lt;/strong&gt;。之前都是线下所以不存在跑路的问题，线上比赛还是路人局队友跑路可太习以为常了。在打比赛顺便帮忙进行队伍对接的时间里，遇到许多队长询问我“比赛打到一半程序/美术跑路了怎么办”。这……你就算这样问我……许多队伍中期队友跑路自己solo到最后，不过是在线组的路人局嘛。完全可以理解，或者说这种情况算是可预估范围内的变数。&lt;/p&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;5\&#34;&gt;&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619688937.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;虽然比赛像是脱了一层皮一样，但是还是很快乐的！线上的Game Jam虽然没有线下相聚如此快乐，但是相对降低了门槛，毕竟不是所有人都有能力买机票去上海hhhh。总之，还是那句话，玩的开心！&lt;/p&gt;\n&lt;p&gt;&lt;strong&gt;还有一件事，我们队伍8人平均年龄20岁，下至高二学生上至22届大学毕业生，只有我是母胎SOLO至今。&lt;/strong&gt;&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619757822.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n很好，现在有比我更年长的母胎SOLO选手出现了（苦笑）。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;game-for-good-gamejam-2022-review&#34;,&#34;abstract&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;你这什么比赛啊72小时怎么一直有人在群里报进度，太卷了太卷了，下次不来了.jpg&lt;/p&gt;\n&lt;/blockquote&gt;\n&#34;,&#34;title&#34;:&#34;Game For Good GameJam 2022 review&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;GameJam&#34;,&#34;slug&#34;:&#34;5E4_53CCa&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/5E4_53CCa/&#34;}],&#34;date&#34;:&#34;2022-08-08 18:20:22&#34;,&#34;dateFormat&#34;:&#34;2022-08-08&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://echosorari.github.io/post/game-for-good-gamejam-2022-review/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;5 min read&#34;,&#34;time&#34;:283000,&#34;words&#34;:1386,&#34;minutes&#34;:5},&#34;description&#34;:&#34;\n你这什么比赛啊72小时怎么一直有人在群里报进度，太卷了太卷了，下次不来了.jpg\n\n\n\n首先感谢本次比赛虽然是线上路人局，但是遇到许多有意思的人，无论是我们队伍的策划选手毛球；程序选手左轮、西洲、流星画魂；美术沐叽、神龙；还是推荐我打一打...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;在学习安卓逆向配置环境时，遇到了Android Studio无法动态调试smali代码的情况，本文旨在解决这一问题。&lt;strong&gt;（请注意，文章具有时效性，本文撰写于2021年末，随着版本的升级本文所提供的方法可能不再适用，请注意甄别。）&lt;/strong&gt;&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;h2 id=\&#34;android-studio版本过高无法使用插件smalidea\&#34;&gt;Android studio版本过高无法使用插件smalidea&lt;/h2&gt;\n&lt;p&gt;以下是我的版本信息。&lt;/p&gt;\n&lt;pre&gt;&lt;code&gt;Android Studio Arctic Fox | 2020.3.1 Patch 3\nBuild #AI-203.7717.56.2031.7784292, built on October 1, 2021\nRuntime version: 11.0.10+0-b96-7249189 amd64\nVM: OpenJDK 64-Bit Server VM by Oracle Corporation\nWindows 10 10.0\nGC: G1 Young Generation, G1 Old Generation\nMemory: 1280M\nCores: 12\nRegistry: external.system.auto.import.disabled=true\nNon-Bundled Plugins: org.jf.smalidea\n&lt;/code&gt;&lt;/pre&gt;\n&lt;figure data-type=\&#34;image\&#34; tabindex=\&#34;1\&#34;&gt;&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619434740.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/figure&gt;\n&lt;p&gt;通过百度极大部分百度到的通过Android studio配置动态调试smaliea时，推荐smalidea的版本都在0.03-0.05之间。需要注意的是，目前本版本（或者更高版本）的Android studio（截至2021/12/14）对旧版本的smalidea已经不再适配，安装之后会进行报错：&lt;br&gt;\n&lt;code&gt;Plugin error: Plugin  is compatible with IntelliJ IDEA only because it doesn&#39;t define any explicit module dependencies&lt;/code&gt;&lt;/p&gt;\n&lt;h3 id=\&#34;删除不断报错的低版本插件\&#34;&gt;删除不断报错的低版本插件&lt;/h3&gt;\n&lt;p&gt;先解决删除旧插件问题。新版本Android studio在导入smalidea并restart IDE后，会不断进行上述报错。在plugins中也无法找到薛定谔的smalidea插件包。这个时候可以打开我的电脑，按照如下路径：&lt;br&gt;\n&lt;code&gt;C:\\Users\\你的用户名\\AppData\\Roaming\\Google\\AndroidStudio2020.3\\plugins&lt;/code&gt;&lt;br&gt;\n这里我的是AndroidStudio2020.3，你的可能不太一样，自己进行修改即可。最终是打开它的“plugins”文件夹，找到“smalidea”这个文件夹，整个删除之后重启IDE即可。&lt;/p&gt;\n&lt;h3 id=\&#34;安装适配新版本的smalidea插件\&#34;&gt;安装适配新版本的smalidea插件&lt;/h3&gt;\n&lt;p&gt;IDE自带Smali Support进行Smali解析，但是Smali Support不支持Smali断点调试。故我们使用Smaliidea，本版本的Android studio需要用smalidea-0.06插件。可以完美解决报错问题。&lt;br&gt;\n最新的smalidea0.06&lt;a href=\&#34;https://bitbucket.org/JesusFreke/smalidea/downloads/\&#34;&gt;点击这里&lt;/a&gt;获取。如果链接炸了，请Github搜索smalidea寻找高版本smalidea解决。&lt;br&gt;\n之后通过一波离线插件的导入（File -&amp;gt; Settting -&amp;gt; Plugins -&amp;gt;小齿轮 -&amp;gt; Install Plugins from Disk，点击本地磁盘下载的安装包），然后进行一个IDE的重启，即可使得smalidea插件生效。&lt;br&gt;\n之后我们修改配置，使smalidea对*.smali文件进行断点调试。这一步由于IDE版本不同，文件显示也有一定差别。但是大题都是一样的。所以按照如下格式进行修改也没有什么大问题。&lt;br&gt;\n首先，点击File -&amp;gt; Settting -&amp;gt;Editor -&amp;gt; File Types找到两个Smali文件：&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619442359.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n找到“File name patterns”里含有*.smali的文件（我这里是smali Files，你的可能两个都是smali），点击&amp;quot;-&amp;quot;进行删除。&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619445939.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n在另一个samali的“File name patterns”中，点击“+”，输入*.smali并点击OK，至此，smalidea断点调试smali的配置已经基本完成。&lt;/p&gt;\n&lt;h2 id=\&#34;android-studio动态调试smali\&#34;&gt;Android studio动态调试smali&lt;/h2&gt;\n&lt;p&gt;Android Studio中自带虚拟机，从Tools-&amp;gt;AVD manager中创建新的虚拟机即可。具体过程自行百度。&lt;s&gt;千万别用VMware创建Android，不仅响应超级慢没法联网还没法安装VM-Tools从传输文件&lt;/s&gt;&lt;br&gt;\n（这里极度建议用自带的虚拟机，还节省了root和connect的步骤）&lt;br&gt;\n这里蜀黍我插句嘴，android studio这个时候你一定配置好adb_path了对吧，一定配置好了对吧，一定配置好了对吧！没有赶快百度去配置！&lt;a href=\&#34;https://blog.csdn.net/wenjun_xiao/article/details/107198615\&#34;&gt;配置错误处理&lt;/a&gt;&lt;br&gt;\n导入需要调试的apk，依次点击 File -&amp;gt; Profile or Debug Apk，打开文件（速度又亿点慢，请耐心等待）&lt;br&gt;\n修改apk的Manifest application 属性&lt;br&gt;\n&lt;code&gt;android:debuggable=“true”&lt;/code&gt;&lt;br&gt;\n可以用apktool解出Manifest 然后修改，接着重新打包回去。这里我使用andriodkiller修改签名打包一步到位。之后将app安装到手机。&lt;br&gt;\n选择Developer options-&amp;gt;Select debug app，选中等待调试的软件，之后打开“Wait for debugger”的开关。我用的是Nexus5的系统，你用别的系统应该也是大差不差。点开后如下图所示。&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619457587.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n返回需要调试的应用，打开。应该会显示“Wait for debugger”。这个时候，点开Android studio的调试按钮（一个长得像瓢虫的东西），弹出如下弹窗。&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619463907.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n选择需要Debug的进程，点击OK。点击IDE的run按钮。这个时候估计就可以进行愉快的调试了。&lt;s&gt;（图中的歌词麻烦无视一下，才不是什么歌曲推荐）&lt;/s&gt;&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718619468652.png\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n这个结果，我看彳亍。&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;gao-ban-ben-hao-android-studio-dong-tai-diao-shi-smali-wen-ti-jie-jue&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;在学习安卓逆向配置环境时，遇到了Android Studio无法动态调试smali代码的情况，本文旨在解决这一问题。&lt;strong&gt;（请注意，文章具有时效性，本文撰写于2021年末，随着版本的升级本文所提供的方法可能不再适用，请注意甄别。）&lt;/strong&gt;&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;高版本号Android Studio动态调试smali问题解决&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;Android&#34;,&#34;slug&#34;:&#34;5daSdvcj1&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/5daSdvcj1/&#34;}],&#34;date&#34;:&#34;2021-12-24 18:16:00&#34;,&#34;dateFormat&#34;:&#34;2021-12-24&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://echosorari.github.io/post/gao-ban-ben-hao-android-studio-dong-tai-diao-shi-smali-wen-ti-jie-jue/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;5 min read&#34;,&#34;time&#34;:259000,&#34;words&#34;:1108,&#34;minutes&#34;:5},&#34;description&#34;:&#34;在学习安卓逆向配置环境时，遇到了Android Studio无法动态调试smali代码的情况，本文旨在解决这一问题。（请注意，文章具有时效性，本文撰写于2021年末，随着版本的升级本文所提供的方法可能不再适用，请注意甄别。）\n\nAndroi...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#android-studio%E7%89%88%E6%9C%AC%E8%BF%87%E9%AB%98%E6%97%A0%E6%B3%95%E4%BD%BF%E7%94%A8%E6%8F%92%E4%BB%B6smalidea\&#34;&gt;Android studio版本过高无法使用插件smalidea&lt;/a&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%88%A0%E9%99%A4%E4%B8%8D%E6%96%AD%E6%8A%A5%E9%94%99%E7%9A%84%E4%BD%8E%E7%89%88%E6%9C%AC%E6%8F%92%E4%BB%B6\&#34;&gt;删除不断报错的低版本插件&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%AE%89%E8%A3%85%E9%80%82%E9%85%8D%E6%96%B0%E7%89%88%E6%9C%AC%E7%9A%84smalidea%E6%8F%92%E4%BB%B6\&#34;&gt;安装适配新版本的smalidea插件&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#android-studio%E5%8A%A8%E6%80%81%E8%B0%83%E8%AF%95smali\&#34;&gt;Android studio动态调试smali&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;p&gt;2021年即将结束，在此记录2021年所看过的书籍、番剧、电影。&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;table&gt;\n&lt;thead&gt;\n&lt;tr&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;No&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;Name&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;Author&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;Tag&lt;/th&gt;\n&lt;th style=\&#34;text-align:center\&#34;&gt;State&lt;/th&gt;\n&lt;/tr&gt;\n&lt;/thead&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;1&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;太阳与少女&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;森见登美彦&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;2&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;将死未死之青&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;乙一&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;3&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;你好，世界&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;野崎惑&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;电影&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;4&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;第三十街的两匹斑马&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;马尔·米歇尔·阿玛德利&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;5&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;心&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;夏目漱石&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;6&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;猫之墓&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;夏目漱石&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;7&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;地狱变&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;芥川龙之介&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;8&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;365日。&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;渡边有子&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;9&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;正见&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;宗萨蒋扬钦哲仁波切&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;佛学、哲学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;10&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;夜行&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;森见登美彦&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;11&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;怪盗二十面相&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;江户川乱步&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;12&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;恶之花&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;波德莱尔&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;诗歌&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;13&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;致愤青&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;克里斯托弗·喜钦斯&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;14&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;草枕&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;夏目漱石&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;15&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;樱&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;西行奈子&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;外国文学&lt;/td&gt;\n&lt;td style=\&#34;text-align:center\&#34;&gt;√&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&#34;,&#34;fileName&#34;:&#34;2021-shu-dan-pian-dan&#34;,&#34;abstract&#34;:&#34;&lt;p&gt;2021年即将结束，在此记录2021年所看过的书籍、番剧、电影。&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;2021书单/片单&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;书单/片单&#34;,&#34;slug&#34;:&#34;N_HX5BuhX&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/N_HX5BuhX/&#34;}],&#34;date&#34;:&#34;2021-11-28 18:39:37&#34;,&#34;dateFormat&#34;:&#34;2021-11-28&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://echosorari.github.io/post/2021-shu-dan-pian-dan/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:49000,&#34;words&#34;:225,&#34;minutes&#34;:1},&#34;description&#34;:&#34;2021年即将结束，在此记录2021年所看过的书籍、番剧、电影。\n\n\n\n\nNo\nName\nAuthor\nTag\nState\n\n\n\n\n1\n太阳与少女\n森见登美彦\n外国文学\n√\n\n\n2\n将死未死之青\n乙一\n外国文学\n√\n\n\n3\n你好，世界\n野崎...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;星汉灿烂，若出其里。 ——曹操《观沧海》&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;老实说，这篇文章是咕了很久很久的一篇文章了，但是由于懒，一直没来得及好好撰写。今天恰好因为ACM比赛把实验室占用了，一觉醒来正好空出来时间写。&lt;br&gt;\n对于星星，我一直抱着一种好奇。天空是星星的承载体，星星是天空的点缀物。几万光年前的光芒，这样小小的挂在夜空。&lt;/p&gt;\n&lt;!-- more --&gt;\n&lt;h2 id=\&#34;星星和天台\&#34;&gt;星星，和天台&lt;/h2&gt;\n&lt;blockquote&gt;\n&lt;p&gt;这孩子打小就喜欢坐在天台上看星星。——我妈&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;实际上，看星星作为我对一种平凡生活中特殊的仪式，在我很小的时候就存在了。&lt;br&gt;\n小时候住的地方都是平房，房顶一般都拿来晒被子晒粮食啥的，到了黄昏的时候固定在天台的烟囱炊烟袅袅，实际上靠近过的都知道，炊烟只是想象起来画面唯美，其实被烟喷到能抹人一脸炭灰。平方顶上是不能进行一些剧烈的运动的，主要是害怕运动的时候碰到太阳能的暖水管，这种管子可以说是很脆弱，导致上平方顶，只能做些比较安静的事情。&lt;br&gt;\n所以打小就喜欢爬到平房顶看星星。&lt;br&gt;\n随着上学搬到县区住之后，都是尖尖的房顶，没有天台。刚刚开始的生活也是很艰难。自行车被偷过，我养的那条狗也因为疾病死去了。如今我还是能记得我妈带着我将他扔掉的情形。&lt;br&gt;\n高中的时候，不知道为啥教室分到了五楼，楼换了一座又一座，巨大的报告厅拔地而起，但是我教室的高度三年从未变过，校长说是锻炼身体，防止因为长时间学习导致体能跟不上。&lt;br&gt;\n我想起了安静的考场上突然头晕倒地的那个高三的学姐。&lt;br&gt;\n那声声响似乎一直在我的耳边回响，久久不散。&lt;br&gt;\n高三新上任的校长真是装糊涂的高手。&lt;br&gt;\n因为疫情，学校封校，要求全体高三学生提前返校封闭式管理。我们挤着住在六人间，每天晚上都有班主任来探班，那个时候还没有内卷这个词，但是班主任总会表扬晚上回宿舍学习至深夜的。我没有那种毅力，回去倒头就睡。由于要宽松管理，一个班的人分在两个大教室上课，又是五楼。如果以教学楼共六层楼为前提，五楼似乎不是那么可悲。&lt;br&gt;\n可是这栋教学楼最高就五层楼。&lt;br&gt;\n这段时间最喜欢的一件事情就是在晚自习的课间，倚靠在窗台边，唱《零重祈愿》，唱《牧星者》。陪伴着我的只有我的MP3，里面存了许多VOCALOID的歌曲，不乏有许多关于夜晚、星空的歌曲。因为大家都在为着双一流高校冲刺着，无暇看星星。所以这个时间段，非常适合像我这种“悲情歌者”。高中的时候不能带手机，所有的外界消息都是通过老师传达的。所以就算让我夜观天象，我也计算不出何时天晴，可以更清楚的看星星。&lt;br&gt;\n但是那段时间，我靠着一张星象图认出了所有的夏日星座，如今的我还是为当时的记忆力感到感叹。现在的我只能吃两大碗米饭。&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;数星星的孩子是在和夜晚的星空交谈，而不是为了得到一个数字。&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;上了大学之后，我觉得，星星还是要看的。然而大学几乎每个地方都是灯火通明，灯火熄灭的时候看门大👴就下场去各个教室赶人了。很显然，如果我不想半夜被锁在冰冷的教学楼里睡觉，那就应该找一个伸手不见五指并且没有封锁限制的地方看星星。&lt;br&gt;\n找地方看星星这么有仪式感的事情，就更要挑选个良辰吉日。我说的，不接受任何反驳。&lt;br&gt;\n在生日那一天，决定任性一些，满校园骑车转转。作为一个学生作风优良到EDG夺冠也没有啥过激行为的学校，干净利落的把最高层的所有的门窗都给焊死了。学校喜提一堆没用的装饰天台。可能是为了学生的安全考虑吧。看着尘封的天台，总不免有些落寞。它并没有作为它原有的功能活着，而是被遗忘。对了，高层也很少有人上自习的。&lt;br&gt;\n但是最终还是被我逮到J1七楼的天台，令人惊讶的是，这里居然是开着门的，甚至还养了盆栽。虽然说J1高层是考研复习重地，但是这不妨碍我上楼看风景。七楼的防火门略微有些沉重，腐朽的门锁发出吱吱声。一边是储物间，但是看起来已经废弃了，另一边是通往天台的小门。生活的惊喜就是那么突然，虽然这之前我已经找了四五栋教学楼了。&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718618917132.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n个人对天台还是有很多情感的。可能是因为看动漫看多了，总会把天台和青涩、恋爱、橘子水、夏天联系在一起。这是我在大学发现的第一个天台。&lt;br&gt;\n后来发条柚👴告诉我其实南门最高的那个行政楼顶层也有一个天台。因为发条柚👴是拉拉人，谈到天台比我还兴奋，给我说可以练舞出道成为校园偶像。我调侃发条柚👴马上给他准备皮套出道成为CTF偶像。今天晚上本是打算一探究竟的，结果发现电梯最高只能爬到11层，从漆黑的窗户上探头一看，上面还有三层，从侧门走楼梯没有灯光太黑了，什么叫望而止步啊。我说，这绝对不是因为害怕啥的，绝对不是。&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718618923894.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&lt;h2 id=\&#34;看星星\&#34;&gt;看星星&lt;/h2&gt;\n&lt;p&gt;&lt;strong&gt;J1天台已加入星旅豪华套餐&lt;/strong&gt;&lt;br&gt;\n在天台拍的照片不经意间被吴同学看到了，独属于我的秘密之地也就此暴露了。&lt;br&gt;\n那也就没必要藏着掖着了，于是发了一条说说，但是凭借我对自己的深刻理解，肯定有很多人不会好好看文章，~~看了也大多都是没有任何艺术细胞的工科生（这条删掉）~~所以并不是很担心这个地方因为成为一个著名打卡景点而被学校锁上。&lt;br&gt;\n吴同学也是一起玩的老熟人了。很巧的是，吴同学虽然与我不是同一学院的人，但是因为定向越野体育课而相识。又因为玩心都比较重，所以我们俩实际上交情还是很好的。&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;吴：晚上去笔架山山顶看星星&lt;br&gt;\n我：嘤嘤嘤今天晚上有课&lt;br&gt;\n吴：周六呀&lt;br&gt;\n我：带俺一个&lt;br&gt;\n吴：女子&lt;br&gt;\n我：彳亍&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;其实我在约定之前，已经去过一次笔架山了。哦，对了。笔架山经过考虑被划分进了家属区，今年建校周年庆顺便在山顶修了一名叫“重檐六角乾惕亭”的小亭子。家属区是人脸识别的，擅自闯入的话，各个居民楼上的大喇叭就会响起”警报，警报，非法闯入“的警报。当然如果你脸皮足够厚那肯定没啥问题，不过对于我来说那肯定相当于一次大型的社死了。&lt;br&gt;\n然而当时正值酷暑，学校一边以线路老化为理由拒绝给宿舍安装空调，一边在家属区修了这么个亭子。被同学们嘲讽”学校真是亲民呢“。&lt;s&gt;BTW，学校为了迎接高贵的新生把GB12宿舍全部换为了上床下桌，可怜住在GB1的我还住着年岁比我都大的床板。&lt;/s&gt;&lt;br&gt;\n总之在某一次漫无目的的散步的时候，散到家属区门口了。然后一狠心，细声细语的问正好经过的老奶奶：&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;我：老师您好，今日天气甚是晴朗，可否带鄙人一程。&lt;br&gt;\n老师：好（笑）&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;老奶奶快笑喷了，然后非常感兴趣的和我聊了一路。之后一个研究生导师带着他的小孩子和他妻子一起散步，也加入了聊天。~~然而是被当成研究生了，后来还解释了解释。不过老师们对我独自一人来爬山很感兴趣是真的。~~虽然中间有一些插曲，但是无伤大雅，跟随着一群研究生（和他们在电话中视频的指导老师）的脚步，终于到山脚。别过老师，我就独自上山了。&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;上山岗,上山岗&lt;br&gt;\n请听我,大声唱&lt;br&gt;\n唱太阳,唱月亮&lt;br&gt;\n唱时光,唱成长&lt;br&gt;\n不孤单,不孤单,因为我们都一样&lt;br&gt;\n愿这歌声,能让你坚强&lt;br&gt;\n——ilem《上山岗》&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;所以，这是我第一次带别人一起爬山。独自爬山总有一种“一览众山小”的气魄，但是两个人爬山相互扶持更舒服一些。&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;我：你有带别的同学🐎&lt;br&gt;\n吴：除了咱俩还有谁神经病似的大晚上的爬山&lt;br&gt;\n我：雀食&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;天色渐暗，但仍是万里无云。心情大好，于是早到了半个多小时，独自与寒风中等待。没吃晚饭，草草的从自动售卖机买了一根士力架。事实证明，这玩意雀食跟人体提供了不少的热量，身体瞬间就暖和了。&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;“到了没”&lt;br&gt;\n“已达”&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;然后吴同学就像看傻子一样看我在原地转圈圈找他。他甚至在我发现他之前和我一起转圈圈。&lt;br&gt;\n爱的魔力转圈圈是吧。抢过他手里的奶茶，后续没少一顿暴打。&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;吴：咱怎么进家属区啊&lt;br&gt;\n我：静等一个有缘人&lt;br&gt;\n吴：那怎么出去&lt;br&gt;\n我：静等一个好心人&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;这个时候我感觉似乎已经看到吴同学流汗黄豆的表情了。但是出于信任，也没咋吐槽我。事实证明，在寻找有缘人这块被我拿捏的死死的。凭借着记忆，成功上山。&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;吴：你上次来的时候……也这么黑？&lt;br&gt;\n我：希望今晚咱俩今晚能下去&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;走了很长的一段马路，灯光闪烁着，甚是好看。好不容易到山脚，有点意外的发现阶梯旁边的灯完全没有亮。不是没完全亮，是完全没有亮。&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;我：你现在有两个选择，上山或者调头回去&lt;br&gt;\n吴：走，上山&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;&lt;img src=\&#34;https://echosorari.github.io/post-images/1718618934566.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n两个人一起摸黑向山顶进军。爬上去是爬上去了，因为是晚秋，嵙的妖风又是出了名的大。因为想着爬山所以没有披上羽绒服的我还是感觉到有些冷。但是兴致于此，不惧风寒。&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;吴：这个地好适合练歌啊，可惜我已经退役了&lt;br&gt;\n我：你不想灌一肚子风明天变身为喷射战士就尽情的在这里练&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;然后吴同学还是唱了两首，清了清嗓子。没有空谷传响，歌声向晚，响彻小亭。在如此安静的夜里，下方闪烁的霓虹灯光和黑暗的山顶相映，到也是有趣。&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;抬头星天灿烂，银色飘扬千千年的雪。——ilem《看星星》&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;比起上次，这次的情侣意料之外的少，只有一对还是因为太冷了一小会就下去了。后来上来了一个玩无人机的大佬，虽然很想搭话但是还是因为重度社恐没有鼓起勇气交谈。&lt;br&gt;\n下山途中，和吴同学聊了很多，再次感叹这个世界真是太奇怪了。&lt;br&gt;\n应该说不愧是他吗。&lt;/p&gt;\n&lt;p&gt;最后留几张图片。&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718618940333.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;br&gt;\n&lt;img src=\&#34;https://echosorari.github.io/post-images/1718618945007.jpg\&#34; alt=\&#34;\&#34; loading=\&#34;lazy\&#34;&gt;&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;kan-xing-xing&#34;,&#34;abstract&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;星汉灿烂，若出其里。 ——曹操《观沧海》&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;p&gt;老实说，这篇文章是咕了很久很久的一篇文章了，但是由于懒，一直没来得及好好撰写。今天恰好因为ACM比赛把实验室占用了，一觉醒来正好空出来时间写。&lt;br&gt;\n对于星星，我一直抱着一种好奇。天空是星星的承载体，星星是天空的点缀物。几万光年前的光芒，这样小小的挂在夜空。&lt;/p&gt;\n&#34;,&#34;title&#34;:&#34;看星星&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;随笔&#34;,&#34;slug&#34;:&#34;0URR1B28T&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://echosorari.github.io/tag/0URR1B28T/&#34;}],&#34;date&#34;:&#34;2021-11-28 18:07:48&#34;,&#34;dateFormat&#34;:&#34;2021-11-28&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://echosorari.github.io/post/kan-xing-xing/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;11 min read&#34;,&#34;time&#34;:615000,&#34;words&#34;:3063,&#34;minutes&#34;:11},&#34;description&#34;:&#34;\n星汉灿烂，若出其里。 ——曹操《观沧海》\n\n老实说，这篇文章是咕了很久很久的一篇文章了，但是由于懒，一直没来得及好好撰写。今天恰好因为ACM比赛把实验室占用了，一觉醒来正好空出来时间写。\n对于星星，我一直抱着一种好奇。天空是星星的承载体，...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E6%98%9F%E6%98%9F%E5%92%8C%E5%A4%A9%E5%8F%B0\&#34;&gt;星星，和天台&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E7%9C%8B%E6%98%9F%E6%98%9F\&#34;&gt;看星星&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;},{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;莫愁前路无知己，天下谁人不识君。&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;h2 id=\&#34;关于本站\&#34;&gt;🏠 关于本站&lt;/h2&gt;\n&lt;p&gt;🚉 本站是我（Grayi、日和、清和、Shigure、sorari、echosorari、MistRaven）的个人网站，似乎看起来很多ID但是常用的没有几个&lt;br&gt;\n💿 闲言碎语 / 随笔 / 笔记 / 各种总结 / 教程 / etc. 存档记录点&lt;br&gt;\n🤝🏻 如非特殊声明，本站文章遵从CC BY-SA 4.0进行的许可&lt;/p&gt;\n&lt;h2 id=\&#34;博主是谁\&#34;&gt;👨‍💻 博主是谁&lt;/h2&gt;\n&lt;p&gt;👻 一团有很多想法的混乱生物，对事物有点自己的理解但不多。&lt;br&gt;\n💻 Debian用户，同时因为各种原因也在使用Windows环境。&lt;br&gt;\n🎮 杂食游戏玩家，最喜欢的类型是Roguelike和Metroidvania，似乎并不是很擅长一个人玩恐怖游戏。&lt;br&gt;\n🔧 经常抽风性的去研究自己很好奇但是“对生活没有什么用”的东西，并且乐在其中。&lt;br&gt;\n☀️ 要么死的安然，要么生的璀璨。&lt;/p&gt;\n&lt;h2 id=\&#34;联系方式\&#34;&gt;📬 联系方式&lt;/h2&gt;\n&lt;ul&gt;\n&lt;li&gt;E-mail：sorari@qq.com&lt;/li&gt;\n&lt;li&gt;Github：https://github.com/echosorari&lt;/li&gt;\n&lt;/ul&gt;\n&lt;h2 id=\&#34;交换友链\&#34;&gt;🔗 交换友链&lt;/h2&gt;\n&lt;p&gt;如果你感兴趣，欢迎邮箱私信我互换友链！&lt;br&gt;\n提供的友链格式为：&lt;/p&gt;\n&lt;pre&gt;&lt;code&gt;[Name](Link) | describe\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;我的友链信息如下：&lt;/p&gt;\n&lt;pre&gt;&lt;code&gt;name:清和/MistRaven（选一个都可以）\nlink:echosorari.github.io\ndescribe:不怎么安分的赛博吟游诗人\n&lt;/code&gt;&lt;/pre&gt;\n&#34;,&#34;fileName&#34;:&#34;about&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;关于&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2019-01-25 19:09:48&#34;,&#34;dateFormat&#34;:&#34;2019-01-25&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://echosorari.github.io/post/about/&#34;,&#34;hideInList&#34;:true,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:65000,&#34;words&#34;:299,&#34;minutes&#34;:2},&#34;description&#34;:&#34;\n莫愁前路无知己，天下谁人不识君。\n\n🏠 关于本站\n🚉 本站是我（Grayi、日和、清和、Shigure、sorari、echosorari、MistRaven）的个人网站，似乎看起来很多ID但是常用的没有几个\n💿 闲言碎语 / 随笔...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99\&#34;&gt;🏠 关于本站&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81\&#34;&gt;👨‍💻 博主是谁&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%81%94%E7%B3%BB%E6%96%B9%E5%BC%8F\&#34;&gt;📬 联系方式&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E4%BA%A4%E6%8D%A2%E5%8F%8B%E9%93%BE\&#34;&gt;🔗 交换友链&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;}]";
+  // var json = escape.substr(1, escape.length - 2);
+  // var datas = json.split(',');
+  // for (let i=0; i < datas.length; i++) {
+  //   let item = datas[i];
+  //   let attrs = item.split('34;:&#34')
+  //   debugger
+  //   console.log(datas[i])
+  // }
+  let escapeMap = new Map();
+  escapeMap.set('&#34;', '"');
+  escapeMap.set('&gt;', '>');
+  escapeMap.set('&#39;', "'");
+  escapeMap.set('&lt;', '<');
+  escapeMap.set('&quot;', '"');
+  escapeMap.set('&amp;', '&');
+</script> -->
+
+
+
+</html>
